@@ -19,7 +19,7 @@ Route::get('/t', function (Request $request) {
 Route::get('setLocale/{locale}',function($locale){
     if (! in_array($locale, ['en', 'fa'])) { 
         Session::put('locale','fa');
-        return redirect('/');
+        return redirect()->back();
     }
 
     Session::put('locale',$locale);
@@ -35,3 +35,9 @@ Route::group(['middleware'=>'language'],function ()
 });
 
 
+
+/* Avoids 404
+Route::any('{query}', 
+  function() { return redirect('/'); })
+  ->where('query', '.*');
+*/
