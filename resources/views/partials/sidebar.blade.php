@@ -12,7 +12,7 @@
     </form>
 
     <div class="row sidebar-links mt-auto mb-5">
-        <div class="col-10 mx-auto">
+        <div class="col-12 mx-auto">
             <div class="row no-gutters icons mb-2">
                 <div class="col-3"><a href=""><i class="fa fa-telegram fa-2x"></i></a></div>
                 <div class="col-3"><a href=""><i class="fa fa-facebook-official fa-2x"></i></a></div>

@@ -30,7 +30,7 @@ Route::get('setLocale/{locale}',function($locale){
 Route::group(['middleware'=>'language'],function ()
 {
     Route::get('/', function () {
-        return view('homepage');
+        return view('homepagetest');
     })->name('homepage');
 });
 
