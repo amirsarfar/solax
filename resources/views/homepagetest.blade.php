@@ -52,7 +52,7 @@
 
 <div class="row no-gutters">
     <div class="store-intro">
-        <img src="images/ember.png" alt="ember" class="back">
+        <img src="images/ember.png" alt="ember" class="back-image">
         <div class="supported-platforms">
             <div class="platform">
                 <img src="images/en_flag.png" alt="">
@@ -91,6 +91,9 @@
                     </div>
                 </div>
             </div>
+            <div class="arrow">
+                <img src="images/rarrow.png" alt="arrow">
+            </div>
             <div class="wrapper">
                 <div class="process">
                     <div class="content">
@@ -101,6 +104,9 @@
                     </div>
                 </div>
             </div>
+            <div class="arrow">
+                <img src="images/rarrow.png" alt="arrow">
+            </div>
             <div class="wrapper">
                 <div class="process">
                     <div class="content">
@@ -110,6 +116,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="arrow">
+                <img src="images/rarrow.png" alt="arrow">
             </div>
             <div class="wrapper">
                 <div class="process">
@@ -125,13 +134,13 @@
         </div>
 
         <div class="sell-offers row mt-5">
-            <div class="col-xl-4 col-md-6">
-                <div class="row">
+            <div class="col-xl-3 col-md-6">
+                <div class="row justify-content-between mb-2">
                     <div class="title">محبوب ترین ها</div>
                     <div class="more"><a href="">نمایش همه</a></div>
                 </div>
                 @for ($i = 0; $i < 10; $i++)
-                <div class="row">
+                <div class="game-card-2">
                     <div class="online col-4">
                         <div class="count mt-auto">
                             بازیکنان آنلاین: ۲۰۰۰
@@ -160,13 +169,13 @@
                 </div>
                 @endfor
             </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="row">
+            <div class="col-xl-3 col-md-6">
+                <div class="row justify-content-between mb-2">
                     <div class="title">محبوب ترین ها</div>
                     <div class="more"><a href="">نمایش همه</a></div>
                 </div>
                 @for ($i = 0; $i < 10; $i++)
-                <div class="row">
+                <div class="game-card-2">
                     <div class="online col-4">
                         <div class="count mt-auto">
                             بازیکنان آنلاین: ۲۰۰۰
@@ -195,13 +204,13 @@
                 </div>
                 @endfor
             </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="row">
+            <div class="col-xl-3 col-md-6">
+                <div class="row justify-content-between mb-2">
                     <div class="title">محبوب ترین ها</div>
                     <div class="more"><a href="">نمایش همه</a></div>
                 </div>
                 @for ($i = 0; $i < 10; $i++)
-                <div class="row">
+                <div class="game-card-2">
                     <div class="online col-4">
                         <div class="count mt-auto">
                             بازیکنان آنلاین: ۲۰۰۰
@@ -255,8 +264,13 @@
 
 <div class="no-gutters row category-overview">
     <div class="col-12">
-        <div class="row">
-
+        <div class="row no-gutters">
+            <div class="col-10">
+                <div class="row justify-content-between">
+                    <div>تازه ترین ها</div>
+                    <div><a href="">مشاهده همه</a></div>
+                </div>
+            </div>
         </div>
         <div class="row no-gutters">
             <div class="col-10 category-item active" id="category1">
@@ -339,7 +353,7 @@
                 </div>
             @endfor
                 
-            <div class="col-2">
+            <div class="col-2 px-3">
                 <div class="row category-selector active" data-target="#category1">
                     <img src="images/upimg1.jpg" alt="upimg">
                     <div class="category-text row">
@@ -391,6 +405,160 @@
     </div>
 </div>
 
+
+<div class="row no-gutters column-offer">
+    <div class="col-12">
+        <div class="row">
+
+        </div>
+        <img src="images/mortal.png" alt="mortal" class="back-image">
+        <div class="row no-gutters column-offer-inner">
+            <div class="col-md-3">
+                <div class="row">
+                    بالاترین ها
+                </div>
+                <div class="row">
+                    <img src="images/upimg2.jpg" alt="upimg" style="height: 100%;width:100%;object-fit:cover;">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    بالاترین ها
+                </div>
+                @for ($i = 0; $i < 2; $i++)
+                <div class="row my-2">
+                    @for ($j = 0; $j < 3; $j++)
+                    <div class="game-card">
+                        <div class="row">
+                            <img class="header" src="images/header{{rand(1,9)}}.jpg" alt="header">
+                        </div>
+                        <div class="row">
+                            <div class="title">
+                                <div class="text">Dota 2</div>
+                                <img src="images/gicon{{rand(1,9)}}.jpg" alt="gicon">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="online pb-2">
+                                <div class="count mt-auto">
+                                    بازیکنان آنلاین: ۲۰۰۰
+                                </div>
+                                <div class="progress" style="height:5px">
+                                    <div class="progress-bar" style="width:40%;height:5px"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="date">
+                                2020/10/03
+                            </div>
+                            <div class="meta-critic">
+                                <div>4.5</div>
+                                <img src="images/metaicon.png" alt="metacritic">
+                            </div>
+                        </div>
+                    </div>
+                    @endfor
+                    
+                </div>
+                @endfor   
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    بالاترین ها
+                </div>
+                @for ($i = 0; $i < 9; $i++)
+                <div class="row game-card-hoverable">
+                    <div class="col">
+                        <div class="row show">
+                            <div class="col">
+                                <div class="meta-critic mt-auto bg-green">
+                                    <div>4.5</div>
+                                    <img src="images/metaicon.png" alt="meta">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="title">
+                                    <div class="text">Dota 2</div>
+                                    <img src="images/gicon{{rand(1,5)}}.jpg" alt="gicon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row hover-show">
+                            <div class="col">
+                                Category
+                            </div>
+                            <div class="col icons">
+                                <div class="row">
+                                    <i class="fa fa-home"></i>
+                                    <i class="fa fa-home"></i>
+                                    <i class="fa fa-home"></i>
+                                </div>
+                                <div class="row">
+                                    <i class="fa fa-home"></i>
+                                    <i class="fa fa-home"></i>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img src="images/header1.jpg" alt="header" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endfor
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row no-gutters coming-soon">
+    <div class="col-12">
+        <div class="row justify-content-between">
+            <div>بازی های در حال انتشار</div>
+            <div><a href="">مشاهده همه</a></div>
+        </div>
+        <div class="row games">
+            @for ($i = 1; $i < 7; $i++)
+            <div class="col-md-2 col-4 game">
+                <img src="images/upimg{{$i}}.jpg" alt="upimg">
+                <div class="info">
+                    <div class="title">Dota 2</div>
+                    <div class="category">Strategy</div>
+                    <div class="icons">
+                        <i class="fa fa-gift"></i>
+                        <i class="fa fa-gift"></i>
+                        <i class="fa fa-gift"></i>
+                    </div>
+                </div>
+            </div>
+            @endfor
+        </div>
+    </div>
+</div>
+
+<div class="row no-gutters coming-soon">
+    <div class="col-12">
+        <div class="row">
+
+        </div>
+        <div class="row games">
+            @for ($i = 1; $i < 7; $i++)
+            <div class="col-md-4 col-6 game">
+                <img src="images/header{{$i}}.jpg" alt="upimg">
+                <div class="info">
+                    <div class="title">Dota 2</div>
+                    <div class="category">Strategy</div>
+                    <div class="icons">
+                        <i class="fa fa-gift"></i>
+                        <i class="fa fa-gift"></i>
+                        <i class="fa fa-gift"></i>
+                    </div>
+                </div>
+            </div>
+            @endfor
+        </div>
+    </div>
+</div>
 
 @endsection
 

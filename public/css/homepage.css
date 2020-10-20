@@ -61,7 +61,7 @@
     flex-direction: column;
 }
 
-.store-intro img.back {
+img.back-image {
     position: absolute;
     opacity: 0.3;
     z-index: -3;
@@ -73,7 +73,7 @@
     opacity: 1;
     height: 150px;
     width: 80%;
-    box-shadow: -15px 10px 15px 15px var(--theme-shadow), -15px -10px 15px 15px var(--theme-shadow);
+    box-shadow: 0px 0px 55px var(--theme-shadow);
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
@@ -94,6 +94,12 @@
     width: 75px;
 }
 
+.store-intro .store-process .arrow img {
+    width: 40px;
+}
+.store-intro .store-process .arrow{
+    align-self: center;
+}
 .store-intro .store-process {
     width: 80%;
     max-width: 1000px;
@@ -131,19 +137,27 @@
 }
 
 .store-intro .store-process .wrapper:nth-child(1) .process {
-    background-image: linear-gradient(#0fefeb, #2b74fa);
-}
-
-.store-intro .store-process .wrapper:nth-child(2) .process {
-    background-image: linear-gradient(#eb77eb, #8071f8);
+    background: transparent linear-gradient(0deg, #017AFE 0%, #02F3EB 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 22px #0184FC;
+    opacity: 1;
 }
 
 .store-intro .store-process .wrapper:nth-child(3) .process {
-    background-image: linear-gradient(#00ff96, #3676e6);
+    background: transparent linear-gradient(1deg, #757CFC 0%, #EA83EE 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #B20AAF;
+    opacity: 1;
 }
 
-.store-intro .store-process .wrapper:nth-child(4) .process {
-    background-image: linear-gradient(#fe928a, #ff6789);
+.store-intro .store-process .wrapper:nth-child(5) .process {
+    background: transparent linear-gradient(180deg, #04FC94 0%, #2676EF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 22px #068394;
+    opacity: 1;
+}
+
+.store-intro .store-process .wrapper:nth-child(7) .process {
+    background: transparent linear-gradient(360deg, #FF6D89 0%, #FE958A 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 14px #F25563;
+    opacity: 1;
 }
 
 .store-intro .store-process .wrapper:nth-child(1) {
@@ -151,17 +165,17 @@
     border-bottom-color: #2b74fa;
 }
 
-.store-intro .store-process .wrapper:nth-child(2) {
+.store-intro .store-process .wrapper:nth-child(3) {
     border-top-color: #eb77eb;
     border-bottom-color: #8071f8;
 }
 
-.store-intro .store-process .wrapper:nth-child(3) {
+.store-intro .store-process .wrapper:nth-child(5) {
     border-top-color: #00ff96;
     border-bottom-color: #3676e6;
 }
 
-.store-intro .store-process .wrapper:nth-child(4) {
+.store-intro .store-process .wrapper:nth-child(7) {
     border-top-color: #fe928a;
     border-bottom-color: #ff6789;
 }
@@ -173,32 +187,35 @@
     margin: auto;
 }
 
-.sell-offers .row {
+.game-card-2 {
     width: 100%;
     height: 70px;
     background-color: rgba(111, 111, 111, 0.3);
     border-radius: 5px;
     margin-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.sell-offers .row .col-4 {
+.game-card-2 .col-4 {
     padding: 0;
     height: 70px;
 }
 
-.sell-offers .row img.header {
+.game-card-2 img.header {
     height: 70px;
     width: 100%;
     object-fit: cover;
+    border-radius: 5px 0 0 5px;
 }
 
-.sell-offers .row:nth-child(1) {
+.game-card-2:nth-child(1) {
     justify-content: space-between;
     width: 100%;
     height: auto;
     background-color: transparent;
 }
-.sell-offers .row:nth-child(1) a{
+.game-card-2:nth-child(1) a{
     color: var(--theme-yellow);
 }
 .online{
@@ -216,7 +233,7 @@
 .online .progress-bar{
     background-color: var(--theme-green);
 }
-.sell-offers .description{
+.game-card-2 .description{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -224,23 +241,23 @@
     padding-left: 0.25rem !important;
 }
 
-.sell-offers .description a{
+.game-card-2 .description a{
     color: var(--theme-text-1);
     text-decoration: none;
 }
 
-.sell-offers .description .title{
+.game-card-2 .description .title{
     width: 100%;
-    padding: 0 0.25rem;
+    padding: 0.5rem 0.25rem;
     display: flex;
     align-items: center;
     overflow: hidden;
 }
-.sell-offers .description .title .text{
+.game-card-2 .description .title .text{
     margin-right: auto;
 }
 
-.sell-offers .description .title img{
+.game-card-2 .description .title img{
     width: 20px;
     margin-right: 0.5rem;
 }
@@ -253,7 +270,7 @@
     display: flex;
     width: max-content;
     align-items: center;
-    padding: 0.25rem;
+    padding: 0 0.25rem;
     border-radius: 20px;
     align-self: end;
     margin-right: auto;
@@ -301,18 +318,10 @@
 .category-overview .category-item{
     display: none;
 }
-.category-overview .category-item .col{
-    border-radius: 5px;
-}
 .category-overview .category-item.active{
     display: unset;
 }
-.category-overview .category-item img.header{
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 5px 5px 0px 0px;
-}
+
 .category-overview .col-2{
     display: flex;
     flex-direction: column;
@@ -328,7 +337,7 @@
 }
 .category-overview .category-selector.active{
     filter: grayscale(0%);
-    transform: scale(1,1.2);
+    transform: scale(1.2);
     z-index: 1;
 }
 .category-overview .category-selector img{
@@ -341,6 +350,7 @@
     width: 100%;
     height: 100%;
     background-image: linear-gradient(rgba(11,11,11,0), rgba(11,11,11,0.7));
+    color: var(--dark-theme-text-1);
 }
 .category-selector.active .category-text{
     position: absolute;
@@ -360,9 +370,23 @@
 .category-selector .category-text .number{
     font-size: 5em;
 }
+.game-card img.header{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
 .game-card{
+    padding: 0;
     margin: 0 0.25rem;
     background-color: rgba(111, 111, 111, 0.3);
+    border-radius: 5px;
+    /*col*/
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
 }
 .game-card .row{
     margin: 0.25rem 0;
@@ -384,6 +408,96 @@
     width: 20px;
     margin-right: 0.5rem;
 }
+
+.coming-soon{
+    width: 90%;
+    margin: 2rem auto;
+}
+.coming-soon .games img{
+    width: 100%;
+    border-radius: 10px;
+}
+.coming-soon .game{
+    filter: grayscale(100%);
+    transition: scale 0.5s;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+}
+.coming-soon .game:hover{
+    filter: grayscale(0%);
+    scale: 1.2;
+    z-index: 1;
+}
+.coming-soon .game .info{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: none;
+
+}
+.coming-soon .game:hover .info{
+    display: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin: 0 auto;
+    width: calc(100% - 1rem);
+    background-image: linear-gradient(rgba(11,11,11,0), rgba(11,11,11,0.9));
+    color: var(--dark-theme-text-1);
+    border-radius: 10px;
+    height: 50%;
+}
+
+.column-offer{
+    width: 95%;
+    margin: 2rem auto;
+}
+.column-offer .column-offer-inner{
+    align-items: center;
+}
+.column-offer img.back-image{
+    left: 0;
+}
+.game-card-hoverable{
+    background-color: rgba(111, 111, 111, 0.3);
+    margin: 0.25rem 0;
+    border-radius: 5px;
+    padding: 0rem 0.2rem;
+}
+.game-card-hoverable .show{
+    align-items: center;
+}
+.game-card-hoverable .hover-show{
+    display: none;
+}
+.game-card-hoverable .icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    padding-left: 0.5rem;
+}
+.game-card-hoverable:hover .hover-show{
+    display: flex;
+}
+.game-card-hoverable .title{
+    width: 100%;
+    padding: 0.5rem 0.25rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.game-card-hoverable .title .text{
+    margin-right: auto;
+}
+.game-card-hoverable .title img{
+    width: 20px;
+}
+.game-card-hoverable .meta-critic{
+    margin-right: 0;
+}
 /* ---------------------------------------------------- */
 
 @media only screen and (max-width: 500px) {
@@ -402,11 +516,15 @@
         width: 100%;
     }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 920px) {
     .store-intro .store-process{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+    }
+    .store-intro .store-process .arrow{
+        transform: rotate(90deg);
+        margin: 0.5rem 0;
     }
 }
 
