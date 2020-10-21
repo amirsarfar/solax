@@ -19,11 +19,11 @@
         <div class="preference-icons d-flex flex-row mr-3">
             <a href="/profile">
                 <div class="profile-icon">
-                    <i class="fa fa-user fa-lg"></i>
+                    <i class="fal fa-user fa-lg"></i>
                 </div>
             </a>
             <div class="theme-toggle">
-                <i class="fa fa-moon fa-sun fa-lg"></i>
+                <i class="fal fa-moon fa-sun fa-lg"></i>
             </div>
         </div>
 
