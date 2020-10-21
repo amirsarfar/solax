@@ -11,11 +11,13 @@ $( document ).ready(function() {
     else
         changeTheme("dark");
 
-    closeSidebar();
 
     stageChildren = $(".header-carousel .slide").length;
     $(".header-carousel .outer-stage .stage").css("width", (stageChildren*416).toString()+"px")
     $(".header-carousel .outer-stage")[0].scroll(0,0);
+
+    if(!isMobileUser){openSidebar();}
+    else{closeSidebar();}
 });
 
 function sidebarHoverHandler(selectedItem) {
@@ -54,7 +56,7 @@ $(".main-content").click(function(e) {
 });
     
 $( window ).resize(function() {
-    closeSidebar();
+    //openSidebar();
     isMobileUser = (window.innerWidth < 576);
 });
 
@@ -73,20 +75,21 @@ function openSidebar(){
         sidebarSize = window.innerWidth;
     
     $(".sidebar").css("width", sidebarSize.toString() +"px");
-    $(".sidebar").css("box-shadow", "var(--theme-shadow) 10px 0px 10px 15px");
-    /*
+    //$(".sidebar").css("box-shadow", "var(--theme-shadow) 10px 0px 10px 15px");
+    
     widthDiff = (sidebarSize + calcScrollbar()).toString();
-    //$("#main-content").css("width", "calc(100vw - "+widthDiff+"px)");*/
+    console.log("calc(100vw - "+widthDiff+"px)");
+    $(".main-content").css("width", "calc(100vw - "+widthDiff+"px)");
     setTimeout(function(){$(".side-text").css("display", "unset");}, 150);
     sidebarOpen = true;
 }
 function closeSidebar(){
-    sidebarSize = 0;
+    sidebarSize = 70;
     if(isMobileUser)
         sidebarSize = 0;
     
     $(".sidebar").css("width", sidebarSize.toString() +"px");
-    $(".sidebar").css("box-shadow", "none");
+    //$(".sidebar").css("box-shadow", "none");
     widthDiff = (sidebarSize + calcScrollbar()).toString();
     $(".main-content").css("width", "calc(100vw - "+widthDiff+"px)");
     $(".side-text").css("display", "none");
@@ -113,6 +116,7 @@ function changeTheme(theme){
     $(":root").css("--theme-text-1", "var(--" + theme + "-theme-text-1)");
     $(":root").css("--theme-text-2", "var(--" + theme + "-theme-text-2)");
     $(":root").css("--theme-shadow", "var(--" + theme + "-theme-shadow)");
+    $(":root").css("--theme-input-bg", "var(--" + theme + "-theme-input-bg)");
     $(".logo img")[0].src = "images/logo_" + theme + ".png";
     $(".logo img")[1].src = "images/logo_sq_" + theme + ".png";
 

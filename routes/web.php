@@ -30,8 +30,12 @@ Route::get('setLocale/{locale}',function($locale){
 Route::group(['middleware'=>'language'],function ()
 {
     Route::get('/', function () {
-        return view('homepagetest');
+        return view('homepage');
     })->name('homepage');
+
+    Route::get('/login', function () {
+        return view('loginpage');
+    })->name('login');
 });
 
 

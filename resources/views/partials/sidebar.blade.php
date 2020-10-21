@@ -11,13 +11,13 @@
         </div>
     </form>
 
-    <div class="row sidebar-links mt-auto mb-5">
+    <div class="row sidebar-links mt-auto mb-5 side-text">
         <div class="col-12 mx-auto">
             <div class="row no-gutters icons mb-2">
-                <div class="col-3"><a href=""><i class="fa fa-telegram fa-2x"></i></a></div>
-                <div class="col-3"><a href=""><i class="fa fa-facebook-official fa-2x"></i></a></div>
-                <div class="col-3"><a href=""><i class="fa fa-google-plus-official fa-2x"></i></a></div>
-                <div class="col-3"><a href=""><i class="fa fa-twitter fa-2x"></i></a></div>
+                <div class="col-3"><a href=""><i class="fab fa-telegram fa-2x"></i></a></div>
+                <div class="col-3"><a href=""><i class="fab fa-facebook fa-2x"></i></a></div>
+                <div class="col-3"><a href=""><i class="fab fa-google-plus fa-2x"></i></a></div>
+                <div class="col-3"><a href=""><i class="fab fa-twitter fa-2x"></i></a></div>
             </div>
             <div class="row no-gutters texts">
                 <div class="col-4 text-left"><a href="">پشتیبانی</a></div>

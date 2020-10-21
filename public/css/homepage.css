@@ -306,6 +306,10 @@ img.back-image {
     flex-direction: column;
     padding: 0.5rem 1rem;
 }
+.banner .description .text{
+    max-height: 95px;
+    overflow: hidden;
+}
 .bg-green{
     background-color: var(--theme-green);
     color: var(--light-theme-text-1);
@@ -509,7 +513,15 @@ img.back-image {
         height: 100px;
     }
 }
-
+@media only screen and (max-width: 767px) {
+    img.top-layer{
+        display: none;
+    }
+    .banner .description{
+        width: unset;
+        left: 1rem;
+    }
+}
 @media only screen and (max-width: 820px) {
     .store-intro .supported-platforms {
         margin: 0;
