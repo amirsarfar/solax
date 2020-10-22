@@ -5,6 +5,7 @@
   --dark-theme-bg-4: #303749b8;
   --dark-theme-bg-5: RGBA(184,182,180,.35);
   --dark-theme-bg-6: #30374987;
+  --dark-theme-bg-7: #e5e5e573;
 
   --dark-theme-input-bg: rgba(2, 6, 33, 0.7);
 
@@ -42,6 +43,7 @@
   --theme-bg-4: var(--dark-theme-bg-4);
   --theme-bg-5: var(--dark-theme-bg-5);
   --theme-bg-6: var(--dark-theme-bg-6);
+  --theme-bg-7: var(--dark-theme-bg-7);
   --theme-input-bg: var(--dark-theme-input-bg);
 
   --theme-border-1: var(--dark-theme-border-1);
@@ -51,7 +53,7 @@
   --theme-text-2: var(--dark-theme-text-2);
   --theme-text-3: var(--dark-theme-text-3);
   --theme-text-4: var(--dark-theme-text-4);
-  --theme-text-5: var(--dark-theme-text-5);
+  --theme-text-5: var(--theme-yellow);
 
   --theme-shadow:var(--dark-theme-shadow);
 
