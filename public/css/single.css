@@ -13,6 +13,9 @@
 .alert-success-custom{
     background: #0d301bad  no-repeat padding-box;
 }
+.text-color-4{
+    color: var(--theme-text-4);
+}
 .border-div {
     border: 2px solid #30374985;
     border-radius: 5px;
@@ -122,4 +125,22 @@ a.active {
 }
 .rtl {
     direction: rtl !important;
+}
+.border-red {
+    border: 2px solid #F55C5C63;
+}
+.border-dashed {
+    border-bottom:1px dashed var(--theme-text-4);
+}
+.circle-warning {
+    height: 13px;
+    display: inline-flex;
+    width: 13px;
+    border-radius: 50%;
+    background-color: var(--theme-text-5);
+}
+
+.radio-l-0::before, .radio-l-0::after {
+    left: -1.5rem !important;
+    right: auto !important;
 }
