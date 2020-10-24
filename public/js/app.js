@@ -18,6 +18,9 @@ $( document ).ready(function() {
 
     if(!isMobileUser){openSidebar();}
     else{closeSidebar();}
+
+    setTimeout(function(){$(".spinner-wrapper")[0].style["display"] = "none";}, 250);
+    //$(".spinner-wrapper")[0].style["display"] = "none";
 });
 
 function sidebarHoverHandler(selectedItem) {
@@ -56,8 +59,9 @@ $(".main-content").click(function(e) {
 });
     
 $( window ).resize(function() {
-    //openSidebar();
     isMobileUser = (window.innerWidth < 576);
+    closeSidebar();
+    
 });
 
 function calcScrollbar(){
@@ -71,13 +75,15 @@ function calcScrollbar(){
 
 function openSidebar(){
     sidebarSize = sidebarWidth;
-    if(isMobileUser)
+    sideDiff = 70;
+    if(isMobileUser){
         sidebarSize = window.innerWidth;
-    
+        sideDiff = 0;
+    }
     $(".sidebar").css("width", sidebarSize.toString() +"px");
     //$(".sidebar").css("box-shadow", "var(--theme-shadow) 10px 0px 10px 15px");
-    
-    widthDiff = (sidebarSize + calcScrollbar()).toString();
+    //$(".sidebar").css("transform", "translate(0)");
+    widthDiff = (sideDiff + calcScrollbar()).toString();
     console.log("calc(100vw - "+widthDiff+"px)");
     $(".main-content").css("width", "calc(100vw - "+widthDiff+"px)");
     setTimeout(function(){$(".side-text").css("display", "unset");}, 150);
@@ -90,6 +96,7 @@ function closeSidebar(){
     
     $(".sidebar").css("width", sidebarSize.toString() +"px");
     //$(".sidebar").css("box-shadow", "none");
+    //$(".sidebar").css("transform", "translate(-130px)");
     widthDiff = (sidebarSize + calcScrollbar()).toString();
     $(".main-content").css("width", "calc(100vw - "+widthDiff+"px)");
     $(".side-text").css("display", "none");
@@ -106,7 +113,7 @@ $(".sidebar-toggle").click(function(){
     
 });
 
-$("#search-bar").click(function(){
+$(".search-bar").click(function(){
     openSidebar();
 });
 
@@ -115,6 +122,7 @@ function changeTheme(theme){
     $(":root").css("--theme-bg-2", "var(--" + theme + "-theme-bg-2)");
     $(":root").css("--theme-text-1", "var(--" + theme + "-theme-text-1)");
     $(":root").css("--theme-text-2", "var(--" + theme + "-theme-text-2)");
+    $(":root").css("--theme-sidebar", "var(--" + theme + "-theme-sidebar)");
     $(":root").css("--theme-shadow", "var(--" + theme + "-theme-shadow)");
     $(":root").css("--theme-input-bg", "var(--" + theme + "-theme-input-bg)");
     $(".logo img")[0].src = "images/logo_" + theme + ".png";

@@ -1,0 +1,79 @@
+.w-95{
+    width: 95%;
+}
+.w-90{
+    width: 90%;
+}
+.w-80{
+    width: 80%;
+}
+.max-w-0{
+    max-width: 1200px;
+}
+.max-w-1{
+    max-width: 1500px;
+}
+.max-w-2{
+    max-width: 1600px;
+}
+.bg-card{
+    background-color: rgba(111, 111, 111, 0.5);
+}
+.border-r-all{
+    border-radius: 5px;
+}
+.main-min-height{
+    min-height: calc(100vh - var(--header-height));
+}
+.overlay-description{
+    z-index: 3;
+    position: absolute;
+    background-color: aqua;
+    width: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.bg-2{
+    background-color: var(--theme-bg-2);
+}
+.border-2{
+    border: 1px solid var(--theme-text-2);
+}
+
+.contact-form textarea,
+.contact-form input{
+    background: var(--theme-input-bg);
+    border: 1px solid var(--theme-text-2);
+    color: var(--theme-text-1);
+}
+.contact-form textarea:focus,
+.contact-form input:focus{
+    box-shadow: 0 0 0.5rem 0.3rem rgba(211,211,211,0.5);
+    background: var(--theme-input-bg);
+    color: var(--theme-text-1);
+    border: 1px solid var(--theme-text-2);
+}
+a{
+    color: var(--theme-text-2);
+}
+.fa-instagram:hover{
+    color: #F03070;
+}
+.fa-youtube:hover{
+    color: #C31A1F;
+}
+.fa-discord:hover{
+    color: #5C73BF;
+}
+.fa-twitch:hover{
+    color: #6C2498;
+}
+.fa-twitter:hover{
+    color: #1DA1F3;
+}
+.fa-telegram-plane:hover{
+    color: #26A9DD;
+}
+.fa-facebook-f:hover{
+    color: #3A559F;
+}

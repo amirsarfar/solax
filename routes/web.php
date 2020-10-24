@@ -36,6 +36,10 @@ Route::group(['middleware'=>'language'],function ()
     Route::get('/login', function () {
         return view('loginpage');
     })->name('login');
+
+    Route::get('/contactus', function () {
+        return view('contact');
+    })->name('contact');
 });
 
 

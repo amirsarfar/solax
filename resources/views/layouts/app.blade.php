@@ -21,7 +21,13 @@
     </head>
 
     <body>
-
+        <div class="spinner-wrapper">
+            <div class="spinner-text">
+                <div class="spinner-border text-warning"></div>
+                @lang('Please wait while we are getting things ready')
+            </div>
+        </div>
+        
         @include('partials.sidebar')
 
         @include('partials.header')

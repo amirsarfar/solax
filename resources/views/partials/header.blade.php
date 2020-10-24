@@ -17,7 +17,7 @@
         </div>
 
         <div class="preference-icons d-flex flex-row mr-3">
-            <a href="/profile">
+            <a href="/login">
                 <div class="profile-icon">
                     <i class="fal fa-user fa-lg"></i>
                 </div>
@@ -29,7 +29,7 @@
 
         <div class="wallet d-flex flex-row mr-3">
             <a href="/wallet">
-                <i class="fa fa-wallet"></i>
+                <i class="fal fa-wallet"></i>
                 <span>۴۵۹۰۰ تومان</span>
             </a>
         </div>

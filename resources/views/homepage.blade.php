@@ -5,45 +5,57 @@
 @endsection
 
 @section('head') 
-    <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">    
+    <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
 @endsection
 
 @section('main-content')
-    
-<div class="row no-gutters carousel-wrapper">
-    <div class="carousel d-flex flex-row align-items-center mx-auto">
+
+<div class="row carousel-title mt-3 mx-auto">
+    <div>پیشنهاد ویژه</div>
+</div>
+<div class="row no-gutters w-100">
+    <!--<img src="images/brushi.png" alt="" class="back-image">-->
+    <div class="carousel d-flex flex-row align-items-center mx-auto my-4">
         <div class="right"><i class="fa fa-angle-right fa-3x"></i></div>
             <div class="outer-stage mx-3">
                 <div class="stage d-flex">
                     <div class="slide active">
-                       <div class="row">
-                            <div class="col-4">
-                                <div class="row">
-                                    <img src="images/header2.jpg" alt="header2">
+                       <div class="row h-100 no-gutters">
+                            <div class="col-4 h-100">
+                                <div class="row h-50 no-gutters">
+                                    <img class="h-100 w-100 object-cover" src="images/header2.jpg" alt="header2">
                                 </div>
-                                <div class="row">
-                                    <img src="images/header3.jpg" alt="header2">
+                                <div class="row h-50 no-gutters">
+                                    <img class="h-100 w-100 object-cover" src="images/header3.jpg" alt="header2">
                                 </div>
                             </div>
-                            <div class="col-8">
-                                <div class="row">
-                                    <img src="images/header4.jpg" alt="header2">
+                            <div class="col-8 h-100">
+                                <div class="row h-100 no-gutters">
+                                    <img class="h-100 w-100 object-cover" src="images/header4.jpg" alt="header2">
                                 </div>
                             </div>
                        </div>
                     </div>
+                    @for ($i = 0; $i < 4; $i++)
                     <div class="slide">
-                       
+                        <div class="row h-100 no-gutters">
+                             <div class="col-4">
+                                 <div class="row h-50 no-gutters">
+                                     <img class="h-100 w-100 object-cover" src="images/header{{rand(1,9)}}.jpg" alt="header2">
+                                 </div>
+                                 <div class="row h-50 no-gutters">
+                                     <img class="h-100 w-100 object-cover" src="images/header{{rand(1,9)}}.jpg" alt="header2">
+                                 </div>
+                             </div>
+                             <div class="col-8">
+                                 <div class="row h-100 no-gutters">
+                                     <img class="h-100 w-100 object-cover" src="images/header{{rand(1,9)}}.jpg" alt="header2">
+                                 </div>
+                             </div>
+                        </div>
                     </div>
-                    <div class="slide">
-                       
-                    </div>
-                    <div class="slide">
-                        
-                    </div>
-                    <div class="slide">
-                        
-                    </div>
+                    @endfor
+                  
                 </div>
             </div>
         <div class="left"><i class="fa fa-angle-left fa-3x"></i></div>
@@ -51,7 +63,7 @@
 </div>
 
 <div class="row no-gutters">
-    <div class="store-intro">
+    <div class="store-intro max-w-2 mx-auto">
         <img src="images/ember.png" alt="ember" class="back-image">
         <div class="supported-platforms">
             <div class="platform">
@@ -84,7 +96,7 @@
             <div class="wrapper">
                 <div class="process">
                     <div class="content">
-                        <i class="fa fa-gift fa-3x"></i>
+                        <i class="fal fa-gift fa-3x"></i>
                         <div class="title">
                             تحویل محصول
                         </div>
@@ -97,7 +109,7 @@
             <div class="wrapper">
                 <div class="process">
                     <div class="content">
-                        <i class="fa fa-credit-card fa-3x"></i>
+                        <i class="fal fa-credit-card fa-3x"></i>
                         <div class="title">
                             پرداخت
                         </div>
@@ -110,7 +122,7 @@
             <div class="wrapper">
                 <div class="process">
                     <div class="content">
-                        <i class="fa fa-shopping-cart fa-3x"></i>
+                        <i class="fal fa-shopping-cart fa-3x"></i>
                         <div class="title">
                             افزودن به سبد خرید
                         </div>
@@ -123,7 +135,7 @@
             <div class="wrapper">
                 <div class="process">
                     <div class="content">
-                        <i class="fa fa-money fa-3x"></i>
+                        <i class="fal fa-money-bill-alt fa-3x"></i>
                         <div class="title">
                             ثبت سفارش
                         </div>
@@ -133,7 +145,7 @@
             
         </div>
 
-        <div class="sell-offers row mt-5">
+        <div class="sell-offers row mt-5 max-w-1">
             <div class="col-xl-4 col-lg-6">
                 <div class="row justify-content-between mb-2">
                     <div class="title">محبوب ترین ها</div>
@@ -244,7 +256,7 @@
 </div>
 
 <div class="row no-gutters">
-    <div class="banner">
+    <div class="banner max-w-2">
         <img class="back-layer" src="images/madmaxback.jpg" alt="madmax">
         <img class="top-layer" src="images/madmax.png" alt="madmax">
         <div class="description">
@@ -262,7 +274,7 @@
     </div>
 </div>
 
-<div class="no-gutters row category-overview">
+<div class="no-gutters row category-overview max-w-1">
     <div class="col-12">
         <div class="row no-gutters">
             <div class="col-10">
@@ -387,7 +399,7 @@
 </div>
 
 <div class="row no-gutters">
-    <div class="banner">
+    <div class="banner max-w-2">
         <img class="back-layer" src="images/creedback.jpg" alt="creed">
         <img class="top-layer" src="images/creed.png" alt="creed">
         <div class="description">
@@ -406,27 +418,27 @@
 </div>
 
 
-<div class="row no-gutters column-offer">
+<div class="row no-gutters column-offer max-w-1">
     <div class="col-12">
         <div class="row">
 
         </div>
         <img src="images/mortal.png" alt="mortal" class="back-image">
         <div class="row no-gutters column-offer-inner">
-            <div class="col-md-3">
-                <div class="row">
+            <div class="col-md-3 height-1">
+                <div class="row mt-3">
                     بالاترین ها
                 </div>
-                <div class="row">
+                <div class="row mt-2">
                     <img src="images/upimg2.jpg" alt="upimg" style="height: 100%;width:100%;object-fit:cover;">
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="row">
+            <div class="col-md-6 height-1">
+                <div class="row mt-3">
                     بالاترین ها
                 </div>
                 @for ($i = 0; $i < 2; $i++)
-                <div class="row my-2">
+                <div class="row my-2 h-50">
                     @for ($j = 0; $j < 3; $j++)
                     <div class="game-card">
                         <div class="row">
@@ -463,12 +475,49 @@
                 </div>
                 @endfor   
             </div>
-            <div class="col-md-3">
-                <div class="row">
+            <div class="col-md-3 height-1">
+                <div class="row mt-3">
                     بالاترین ها
                 </div>
-                @for ($i = 0; $i < 9; $i++)
-                <div class="row game-card-hoverable">
+                <div class="row game-card-hoverable active mt-2">
+                    <div class="col">
+                        <div class="row show">
+                            <div class="col">
+                                <div class="meta-critic mt-auto bg-green">
+                                    <div>4.5</div>
+                                    <img src="images/metaicon.png" alt="meta">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="title">
+                                    <div class="text">Dota 2</div>
+                                    <img src="images/gicon{{rand(1,5)}}.jpg" alt="gicon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row hover-show">
+                            <div class="col">
+                                Category
+                            </div>
+                            <div class="col icons">
+                                <div class="row">
+                                    <i class="fa fa-home"></i>
+                                    <i class="fa fa-home"></i>
+                                    <i class="fa fa-home"></i>
+                                </div>
+                                <div class="row">
+                                    <i class="fa fa-home"></i>
+                                    <i class="fa fa-home"></i>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img src="images/header1.jpg" alt="header" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @for ($i = 0; $i < 7; $i++)
+                <div class="row game-card-hoverable mt-2">
                     <div class="col">
                         <div class="row show">
                             <div class="col">
@@ -511,7 +560,7 @@
     </div>
 </div>
 
-<div class="row no-gutters coming-soon">
+<div class="row no-gutters coming-soon max-w-1">
     <div class="col-12">
         <div class="row justify-content-between">
             <div>بازی های در حال انتشار</div>
@@ -519,7 +568,7 @@
         </div>
         <div class="row games">
             @for ($i = 1; $i < 7; $i++)
-            <div class="col-md-2 col-4 game">
+            <div class="col-md-2 col-6 game">
                 <img src="images/upimg{{$i}}.jpg" alt="upimg">
                 <div class="info">
                     <div class="title">Dota 2</div>
@@ -536,14 +585,27 @@
     </div>
 </div>
 
-<div class="row no-gutters coming-soon">
+<div class="row w-90 mx-auto max-w-2">
+    <div class="col-md-8 mt-3">
+        <div class="row no-gutters bg-card border-r-all">
+            <canvas id="myChart" width="630" height="350"></canvas>
+        </div>
+    </div>
+    <div class="col-md-4 mt-3">
+        <div class="row no-gutters bg-card border-r-all">
+            <canvas id="myChart2" width="630" height="350"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="row no-gutters coming-soon max-w-1">
     <div class="col-12">
         <div class="row">
 
         </div>
         <div class="row games">
             @for ($i = 1; $i < 7; $i++)
-            <div class="col-md-4 col-6 game">
+            <div class="col-md-4 col-sm-6 col-12 game">
                 <img src="images/header{{$i}}.jpg" alt="upimg">
                 <div class="info">
                     <div class="title">Dota 2</div>
@@ -562,6 +624,7 @@
 
 @endsection
 
-@section('script')
+@section('script')   
+    <script src="{{ asset('js/Chart.min.js') }}"></script> 
     <script src="{{ asset('js/homepage.js') }}"></script>
 @endsection

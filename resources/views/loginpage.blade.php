@@ -9,6 +9,7 @@
 @endsection
 
 @section('main-content')
+
     <div class="login-forms-wrapper">
         <img src="images/ph2.jpg" alt="phantom" class="back">
         <div class="row h-100 form-outer">
@@ -42,7 +43,7 @@
                                 <button type="submit" class="btn btn-success w-100">ثبت نام</button>
                             </form>
 
-                            <button type="submit" class="btn btn-danger mt-3 w-100">Sign Up <i class="fa fa-google"></i></button>
+                            <button type="submit" class="btn btn-danger mt-3 w-100">Sign Up <i class="fab fa-google"></i></button>
                         </div>
 
                         <div class="single-form active" id="login">
@@ -69,10 +70,13 @@
                                 <button type="submit" class="btn btn-success w-100">ورود</button>
                             </form>
 
-                            <button type="submit" class="btn btn-danger mt-3 w-100">Sign In <i class="fa fa-google"></i></button>
+                            <button type="submit" class="btn btn-danger mt-3 w-100">Sign In <i class="fab fa-google"></i></button>
                         </div>
 
                         <div class="single-form" id="forget-password">
+                            <div class="row mb-3">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 
+                            </div>
                             <form action="">
                                 <div class="form-group">
                                     <label for="email">ایمیل</label>
