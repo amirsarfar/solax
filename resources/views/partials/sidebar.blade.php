@@ -7,7 +7,7 @@
             <input type="text" placeholder="جستجو" name="searchTerm">
         </div>
         <div class="mr-auto">
-            <i class="fas fa-search"></i>
+            <i class="fal fa-search"></i>
         </div>
     </form>
 
@@ -22,7 +22,7 @@
             <div class="row no-gutters texts">
                 <div class="col-4 text-left"><a href="">پشتیبانی</a></div>
                 <div class="col-4 text-center"><a href="">درباره ما</a></div>
-                <div class="col-4 text-right"><a href="">تماس با ما</a></div>
+                <div class="col-4 text-right"><a href="/contactus">تماس با ما</a></div>
             </div>
         </div>
     </div>

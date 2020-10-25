@@ -5,7 +5,7 @@
 @endsection
 
 @section('head')
-<link rel="stylesheet" href="{{ asset('css/contactus.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/contactus.css') }}">
 @endsection 
 
 @section('main-content')

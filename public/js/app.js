@@ -1,3 +1,4 @@
+
 $( document ).ready(function() {
     sidebarOpen = true;
     darkTheme = true;
@@ -19,10 +20,13 @@ $( document ).ready(function() {
     if(!isMobileUser){openSidebar();}
     else{closeSidebar();}
 
-    setTimeout(function(){$(".spinner-wrapper")[0].style["display"] = "none";}, 250);
-    //$(".spinner-wrapper")[0].style["display"] = "none";
+    //setTimeout(function(){$(".spinner-wrapper")[0].style["display"] = "none";}, 1250);
+    $(".spinner-wrapper")[0].style["display"] = "none";
 });
-
+$(window).on('load',function() {
+    //setTimeout(function(){$(".spinner-wrapper")[0].style["display"] = "none";}, 250);
+    //$(".spinner-wrapper")[0].style["display"] = "none"
+});
 function sidebarHoverHandler(selectedItem) {
     items = $(".sidebar-item");
     for(i=0; i<items.length; i++){
@@ -125,10 +129,15 @@ function changeTheme(theme){
     $(":root").css("--theme-sidebar", "var(--" + theme + "-theme-sidebar)");
     $(":root").css("--theme-shadow", "var(--" + theme + "-theme-shadow)");
     $(":root").css("--theme-input-bg", "var(--" + theme + "-theme-input-bg)");
-    $(".logo img")[0].src = "images/logo_" + theme + ".png";
-    $(".logo img")[1].src = "images/logo_sq_" + theme + ".png";
-
-    theme=="dark"?$(".fa-moon")[0].classList.add("fa-sun"):$(".fa-moon")[0].classList.remove("fa-sun");
+    
+    if(theme == "dark"){
+        $(".logo img").css("filter", "invert(0)");
+        $(".fa-moon")[0].classList.add("fa-sun")
+    }
+    else{
+        $(".logo img").css("filter", "invert(1)");
+        $(".fa-moon")[0].classList.remove("fa-sun")
+    }
     darkTheme = theme=="dark";
     localStorage.setItem('theme', theme);
 }

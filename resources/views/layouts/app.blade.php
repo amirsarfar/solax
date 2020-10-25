@@ -7,16 +7,16 @@
 
         <title>@yield('title', 'KeyMe')</title>
 
-        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="{{ asset('favicon.ico') }}">
 
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap-rtl.css') }}">
         <link rel="stylesheet" href="{{ asset('css/font-vazir/Farsi-Digits/font-face-FD.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
         <link rel="stylesheet" href="{{ asset('fa5/css/all.css') }}">
 
         @yield('head')
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
     </head>
 

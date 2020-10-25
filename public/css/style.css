@@ -86,7 +86,7 @@ body {
 .search-bar input::placeholder{
   color: var(--dark-theme-text-2);
 }
-.search-bar .fas {
+.search-bar .fa-search {
   color: var(--theme-yellow);
 }
 .sidebar-item a,

@@ -364,6 +364,8 @@ img.back-image {
 
 .category-overview .category-item {
     display: none;
+    animation-name: fadeed;
+    animation-duration: 1.5s;
 }
 
 .category-overview .category-item.active {
@@ -383,6 +385,7 @@ img.back-image {
     width: 100%;
     filter: grayscale(80%);
     position: relative;
+    transition: filter 0.5s, transform 0.5s;
 }
 
 .category-overview .category-selector.active {
