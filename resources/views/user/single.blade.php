@@ -8,31 +8,6 @@
     <script src="{{asset('js/Chart.min.js')}}"></script>
 @endsection
 @section('main-content')
-    <style>
-        /* width */
-        ::-webkit-scrollbar {
-            width: 7px;
-            border-radius: 5px;
-        }
-
-        /* Track */
-        ::-webkit-scrollbar-track {
-            border-radius: 5px;
-            background: #6B6666;
-        }
-
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-            border-radius: 5px;
-            background: #B8B6B4;
-        }
-
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-            border-radius: 5px;
-            background: #B8B6B4;
-        }
-    </style>
     <div class="container-fluid"
          style="background-image: url({{asset('images/games/game-5.jpg')}});height: 300px;background-size: cover; background-repeat: no-repeat ;">
         <div class="mt-1 mt-lg-3">

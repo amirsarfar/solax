@@ -128,9 +128,9 @@ function changeTheme(theme){
     $(":root").css("--theme-bg-8", "var(--" + theme + "-theme-bg-8)");
     $(":root").css("--theme-border-2", "var(--" + theme + "-border-2)");
     $(":root").css("--theme-text-1", "var(--" + theme + "-theme-text-1)");
-    $(":root").css("--theme-text-2", "var(--" + theme + "-theme-text-3)");
-    $(":root").css("--theme-text-3", "var(--" + theme + "-theme-text-4)");
-    $(":root").css("--theme-text-4", "var(--" + theme + "-theme-text-2)");
+    $(":root").css("--theme-text-2", "var(--" + theme + "-theme-text-2)");
+    $(":root").css("--theme-text-3", "var(--" + theme + "-theme-text-3)");
+    $(":root").css("--theme-text-4", "var(--" + theme + "-theme-text-4)");
     $(":root").css("--theme-sidebar", "var(--" + theme + "-theme-sidebar)");
     $(":root").css("--theme-shadow", "var(--" + theme + "-theme-shadow)");
     $(":root").css("--theme-input-bg", "var(--" + theme + "-theme-input-bg)");

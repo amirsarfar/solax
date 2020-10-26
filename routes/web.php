@@ -36,7 +36,7 @@ Route::group(['middleware'=>'language'],function ()
     Route::get('/login', function () {
         return view('loginpage');
     })->name('login');
-    
+
     Route::get('/contactus', function () {
         return view('contact');
     })->name('contact');
@@ -44,6 +44,9 @@ Route::group(['middleware'=>'language'],function ()
     Route::get('/single', function () {
         return view('user.single');
     })->name('single');
+    Route::get('/article/single', function () {
+        return view('user.articles.single');
+    })->name('article.single');
 
 });
 
