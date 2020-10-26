@@ -41,7 +41,7 @@ $(".sidebar-item").hover(
         if(!hoveredRecently){
             sidebarHoverHandler($(this).attr("data-target"));
         }
-        
+
     }, function() { }
 );
 
@@ -57,11 +57,11 @@ $(".sidebar-child").hover(
 $(".main-content").click(function(e) {
     closeSidebar();
 });
-    
+
 $( window ).resize(function() {
     isMobileUser = (window.innerWidth < 576);
     closeSidebar();
-    
+
 });
 
 function calcScrollbar(){
@@ -93,7 +93,7 @@ function closeSidebar(){
     sidebarSize = 70;
     if(isMobileUser)
         sidebarSize = 0;
-    
+
     $(".sidebar").css("width", sidebarSize.toString() +"px");
     //$(".sidebar").css("box-shadow", "none");
     //$(".sidebar").css("transform", "translate(-130px)");
@@ -110,7 +110,7 @@ $(".sidebar-toggle").click(function(){
         return;
     }
     openSidebar();
-    
+
 });
 
 $(".search-bar").click(function(){
@@ -120,14 +120,23 @@ $(".search-bar").click(function(){
 function changeTheme(theme){
     $(":root").css("--theme-bg-1", "var(--" + theme + "-theme-bg-1)");
     $(":root").css("--theme-bg-2", "var(--" + theme + "-theme-bg-2)");
+    $(":root").css("--theme-bg-3", "var(--" + theme + "-theme-bg-3)");
+    $(":root").css("--theme-bg-4", "var(--" + theme + "-theme-bg-4)");
+    $(":root").css("--theme-bg-5", "var(--" + theme + "-theme-bg-5)");
+    $(":root").css("--theme-bg-6", "var(--" + theme + "-theme-bg-6)");
+    $(":root").css("--theme-bg-7", "var(--" + theme + "-theme-bg-7)");
+    $(":root").css("--theme-bg-8", "var(--" + theme + "-theme-bg-8)");
+    $(":root").css("--theme-border-2", "var(--" + theme + "-border-2)");
     $(":root").css("--theme-text-1", "var(--" + theme + "-theme-text-1)");
-    $(":root").css("--theme-text-2", "var(--" + theme + "-theme-text-2)");
+    $(":root").css("--theme-text-2", "var(--" + theme + "-theme-text-3)");
+    $(":root").css("--theme-text-3", "var(--" + theme + "-theme-text-4)");
+    $(":root").css("--theme-text-4", "var(--" + theme + "-theme-text-2)");
     $(":root").css("--theme-sidebar", "var(--" + theme + "-theme-sidebar)");
     $(":root").css("--theme-shadow", "var(--" + theme + "-theme-shadow)");
     $(":root").css("--theme-input-bg", "var(--" + theme + "-theme-input-bg)");
     $(".logo img")[0].src = "images/logo_" + theme + ".png";
     $(".logo img")[1].src = "images/logo_sq_" + theme + ".png";
-
+    theme=="light"?$("img.back-image1").css('filter','none'):$("img.back-image1").css('filter','brightness(40%)');
     theme=="dark"?$(".fa-moon")[0].classList.add("fa-sun"):$(".fa-moon")[0].classList.remove("fa-sun");
     darkTheme = theme=="dark";
     localStorage.setItem('theme', theme);
