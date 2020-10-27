@@ -2,14 +2,13 @@
   --dark-theme-bg-1: #020621;
   --dark-theme-bg-2: #10142A;
   --dark-theme-bg-3: #191d31;
-
-  --dark-theme-sidebar: #10142AAC;
-
   --dark-theme-bg-4: #303749b8;
   --dark-theme-bg-5: RGBA(184,182,180,.35);
   --dark-theme-bg-6: #30374987;
   --dark-theme-bg-7: #e5e5e573;
+  --dark-theme-bg-8: #343a40;
 
+  --dark-theme-sidebar: #10142AAC;
   --dark-theme-input-bg: rgba(2, 6, 33, 0.7);
 
   --dark-theme-text-1: #fff;
@@ -25,6 +24,11 @@
   --light-theme-bg-1: #fff;
   --light-theme-bg-2: #f2f2f2;
   --light-theme-bg-3: #191d31;
+  --light-theme-bg-4: #fff;
+  --light-theme-bg-5: #E5E5E5;
+  --light-theme-bg-6: #fff;
+  --light-theme-bg-7: #fff;
+  --light-theme-bg-8: #fff;
   --light-theme-sidebar: #f2f2f2AC;
 
   --light-theme-input-bg: rgba(211, 211, 211, 0.7);
@@ -32,7 +36,7 @@
   --light-theme-text-1: #222;
   --light-theme-text-2: #3B3D40;
   --light-theme-text-3: #191d31;
-
+  --light-theme-border-2: #fff;
   --light-theme-shadow: rgba(11, 11, 11, 0.3);
 
   --theme-yellow: #FFCC34;
