@@ -47,6 +47,9 @@ Route::group(['middleware'=>'language'],function ()
     Route::get('/article/single', function () {
         return view('user.articles.single');
     })->name('article.single');
+    Route::get('/advance-search', function () {
+        return view('user.advanced-search');
+    });
 
 });
 
