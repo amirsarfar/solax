@@ -5,7 +5,8 @@ $( document ).ready(function() {
     isMobileUser = (window.innerWidth < 576);
     sidebarWidth = 200;
     hoveredRecently = false;
-
+    isTouch = ('ontouchstart' in document.documentElement);
+    
     savedTheme = localStorage.getItem("theme");
     if(savedTheme)
         changeTheme(savedTheme);

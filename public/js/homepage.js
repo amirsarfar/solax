@@ -1,7 +1,7 @@
 $(document).ready(function() {
     selectedCategory = "#category1";
     slideIndex = 0;
-
+    
     $(".category-selector").hover(
         function() {
             target = $(this).attr("data-target");

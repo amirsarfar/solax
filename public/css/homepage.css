@@ -263,7 +263,7 @@ img.back-image {
     margin-top: 0.25rem;
 }
 
-.online .progress-bar {
+.progress-bar {
     background-color: var(--theme-green);
 }
 
@@ -588,7 +588,70 @@ img.back-image {
     margin-right: 0;
 }
 
+.vr-section {
+    width: 90%;
+    margin: 2rem auto;
+}
 
+.vr-section .vr-games img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.vr-section .vr-game {
+    transition: scale 0.5s;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+}
+
+.vr-section .vr-game:hover {
+    scale: 1.2;
+    z-index: 1;
+}
+
+.vr-section .vr-game .info {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0 auto;
+    width: calc(100% - 1rem);
+    color: var(--dark-theme-text-1);
+    border-radius: 10px;
+    height: 100%;
+}
+.vr-section .vr-game:nth-child(1) .info{
+    background-color: #BE7F0075;
+}
+.vr-section .vr-game:nth-child(2) .info{
+    background-color: #003FBE75;
+}
+.vr-section .vr-game:nth-child(3) .info{
+    background-color: #AC540F75;
+}
+.vr-section .vr-game:nth-child(4) .info{
+    background-color: #68AC0F75;
+}
+.vr-section .vr-game:nth-child(5) .info{
+    background-color: #0FE95875;
+}
+.vr-section .vr-game:nth-child(6) .info{
+    background-color: #F6514575;
+}
+
+.h-40p{
+    height: 40px !important;
+}
+.w-40p{
+    width: 40px !important;
+}
+.font-16{
+    font-size: 1rem;
+}
 /* ---------------------------------------------------- */
 
 @media only screen and (max-width: 500px) {
