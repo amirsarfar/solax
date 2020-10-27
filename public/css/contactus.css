@@ -40,6 +40,12 @@
     border: 1px solid var(--theme-text-2);
 }
 
+.custom-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
 .contact-form textarea,
 .contact-form input{
     background: var(--theme-input-bg);

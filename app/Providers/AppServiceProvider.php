@@ -32,12 +32,14 @@ class AppServiceProvider extends ServiceProvider
         $object4 = (object) ['id' => 4, 'title' => 'دسته بندی', 'link' => '/u', 'parent' => null, 'icon' => 'list', 'hasChild' => true, 'children' => [$object5, $object6]];
         $object7 = (object) ['id' => 7, 'title' => 'استریم  ها', 'link' => '/u', 'parent' => null, 'icon' => 'video', 'hasChild' => true, 'children' => [$object3, $object5]];
         $object8 = (object) ['id' => 8, 'title' => 'اخبار', 'link' => '/u', 'parent' => null, 'icon' => 'newspaper', 'hasChild' => true, 'children' => [$object2, $object3]];
+        $object9 = (object) ['id' => 9, 'title' => 'سوالات متداول', 'link' => '/faq', 'parent' => null, 'icon' => 'question', 'hasChild' => false];
         
         View::share('sidebarItems', [
             $object1,
             $object4,
             $object7,
-            $object8
+            $object8,
+            $object9
         ]);
     }
 }

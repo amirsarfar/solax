@@ -5,13 +5,13 @@
             <div class="dropdown">
                 <button type="button" class="dropdown-toggle px-2 py-1" data-toggle="dropdown">
                     {{ Str::upper(str_replace('_', '-', app()->getLocale())) }}
-                    <img src="images/{{str_replace('_', '-', app()->getLocale())}}_flag.png" alt="">
+                    <img src="{{ asset("images/" . str_replace('_', '-', app()->getLocale()) . "_flag.png") }}" alt="">
                 </button>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="setLocale/en">English <img src="images/en_flag.png" alt=""></a>
-                  <a class="dropdown-item" href="setLocale/fr">Français <img src="images/fr_flag.png" alt=""></a>
-                  <a class="dropdown-item" href="setLocale/es">Español <img src="images/es_flag.png" alt=""></a>
-                  <a class="dropdown-item" href="setLocale/fa">فارسی <img src="images/fa_flag.png" alt=""></a>
+                  <a class="dropdown-item" href="setLocale/en">English <img src="{{ asset('images/en_flag.png') }}" alt=""></a>
+                  <a class="dropdown-item" href="setLocale/fr">Français <img src="{{ asset('images/fr_flag.png') }}" alt=""></a>
+                  <a class="dropdown-item" href="setLocale/es">Español <img src="{{ asset('images/es_flag.png') }}" alt=""></a>
+                  <a class="dropdown-item" href="setLocale/fa">فارسی <img src="{{ asset('images/fa_flag.png') }}" alt=""></a>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
                             </div>
                             <div class="image">
                                 <div class="discount">۹۶٪</div>
-                                <img src="images/header2.jpg" alt="header">
+                                <img src="{{ asset('images/header2.jpg') }}" alt="header">
                             </div>
                         </a>
                     </div>
@@ -76,7 +76,7 @@
                             </div>
                             <div class="image">
                                 <div class="discount">۹۶٪</div>
-                                <img src="images/header3.jpg" alt="header">
+                                <img src="{{ asset('images/header3.jpg') }}" alt="header">
                             </div>
                         </a>
                     </div>
@@ -97,7 +97,7 @@
                             </div>
                             <div class="image">
                                 <div class="discount">۹۶٪</div>
-                                <img src="images/header1.jpg" alt="header">
+                                <img src="{{ asset('images/header1.jpg') }}" alt="header">
                             </div>
                         </a>
                     </div>
@@ -118,7 +118,7 @@
                             </div>
                             <div class="image">
                                 <div class="discount">۹۶٪</div>
-                                <img src="images/header2.jpg" alt="header">
+                                <img src="{{ asset('images/header2.jpg') }}" alt="header">
                             </div>
                         </a>
                     </div>
@@ -139,7 +139,7 @@
                             </div>
                             <div class="image">
                                 <div class="discount">۹۶٪</div>
-                                <img src="images/header4.jpg" alt="header">
+                                <img src="{{ asset('images/header4.jpg') }}" alt="header">
                             </div>
                         </a>
                     </div>
@@ -150,8 +150,8 @@
 
         <div class="logo mr-auto">
             <a href="/">
-                <img id="logo-rect" src="images/logo_dark.png" alt="steam-logo">
-                <img id="logo-sq" src="images/logo_sq_dark.png" alt="steam-logo">
+                <img id="logo-rect" src="{{ asset('images/logo_dark.png') }}" alt="steam-logo">
+                <img id="logo-sq" src="{{ asset('images/logo_sq_dark.png') }}" alt="steam-logo">
             </a>
         </div>
         <div class="pl-4 pr-3 py-2 sidebar-toggle">

@@ -45,6 +45,18 @@ Route::group(['middleware'=>'language'],function ()
         return view('user.single');
     })->name('single');
 
+    Route::get('/faq', function () {
+        return view('faq');
+    })->name('faq');
+
+    Route::get('/articles', function () {
+        return view('article.index');
+    })->name('articles');
+
+    Route::get('/articles/t', function () {
+        return view('article.index');
+    })->name('articles');
+
 });
 
 

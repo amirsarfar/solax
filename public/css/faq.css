@@ -1,0 +1,119 @@
+.w-95{
+    width: 95%;
+}
+.w-90{
+    width: 90%;
+}
+.w-80{
+    width: 80%;
+}
+.max-w-0{
+    max-width: 1200px;
+}
+.max-w-1{
+    max-width: 1500px;
+}
+.max-w-2{
+    max-width: 1600px;
+}
+.bg-card{
+    background-color: rgba(111, 111, 111, 0.5);
+}
+.border-r-all{
+    border-radius: 5px;
+}
+.main-min-height{
+    min-height: calc(100vh - var(--header-height));
+}
+
+.bg-2{
+    background-color: var(--theme-bg-2);
+}
+.border-2{
+    border: 1px solid var(--theme-text-2);
+}
+.font-16{
+    font-size: 1rem;
+}
+.font-40{
+    font-size: 2.5rem;
+}
+
+a,
+a:hover{
+    color: var(--theme-yellow);
+}
+
+.faq-tab{
+    text-align: center;
+    color: #E1E1E1;
+    border-bottom: 2px solid #E1E1E1;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+.faq-tab.active{
+    color: var(--theme-yellow);
+    border-bottom: 2px solid var(--theme-yellow);
+}
+
+.question{
+    font-weight: 700;
+}
+.faq-card .answer{
+    display: none;
+    margin-top: 0.5rem;
+}
+.faq-card.active .answer{
+    display: flex;
+}
+.faq-part{
+    display: none;
+}
+.faq-part.active{
+    display: unset;
+}
+.search-input{
+    background: #ffffffac 0% 0% no-repeat padding-box;
+    border: none;
+    height: 3rem;
+    border-radius: 50px;
+    box-shadow: 0px 0px 16px #FFFFFF;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+.search-button{
+    border: none;
+    background-color: var(--theme-yellow);
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    padding: 0;
+    box-shadow: 0px 0px 10px #FFCC34;
+    position: absolute;
+    left: 0;
+}
+
+.page-item.active .page-link{
+    background-color: transparent;
+    border: 1px solid var(--theme-yellow);
+    color: var(--theme-yellow);
+    border-radius: 5px;
+
+}
+.page-link:hover{
+    background-color: transparent;
+    border: none;
+    color: var(--theme-yellow);
+}
+.page-link{
+    background-color: transparent;
+    border: none;
+    color: var(--theme-text-2);
+}
+
+.page-item.disabled .page-link{
+    background-color: transparent;
+    border: none;
+    color: var(--theme-text-2);
+}

@@ -598,22 +598,34 @@
     </div>
 </div>
 
-<div class="row no-gutters coming-soon max-w-1">
+<div class="row no-gutters vr-section max-w-1">
     <div class="col-12">
         <div class="row">
 
         </div>
-        <div class="row games">
+        <div class="row vr-games">
             @for ($i = 1; $i < 7; $i++)
-            <div class="col-md-4 col-sm-6 col-12 game">
+            <div class="col-md-4 col-sm-6 col-12 vr-game">
                 <img src="images/header{{$i}}.jpg" alt="upimg">
                 <div class="info">
-                    <div class="title">Dota 2</div>
-                    <div class="category">Strategy</div>
-                    <div class="icons">
-                        <i class="fa fa-gift"></i>
-                        <i class="fa fa-gift"></i>
-                        <i class="fa fa-gift"></i>
+                    <div class="row mx-2">
+                        <div class="col">
+                            <div class="row justify-content-end font-16">Dota 2 Bala</div>
+                            <div class="row justify-content-end">1999/12/07</div>
+                        </div>
+                        <div class="col-2">
+                            <img class="h-40p w-40p" src="{{ asset('images/gicon'. rand(1,9) .'.jpg') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="row align-items-center mx-2 mb-3">
+                        <div class="col">
+                            بازیکنان آنلاین: 2000
+                        </div>
+                        <div class="col">
+                            <div class="progress" style="height:5px">
+                                <div class="progress-bar" style="width:40%;height:5px"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
