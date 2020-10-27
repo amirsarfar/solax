@@ -17,7 +17,7 @@ Route::get('/t', function (Request $request) {
 });
 
 Route::get('setLocale/{locale}',function($locale){
-    if (! in_array($locale, ['en', 'fa'])) { 
+    if (! in_array($locale, ['en', 'fa'])) {
         Session::put('locale','fa');
         return redirect()->back();
     }
@@ -52,12 +52,21 @@ Route::group(['middleware'=>'language'],function ()
     Route::get('/articles/t', function () {
         return view('article.index');
     })->name('articles');
+    Route::get('/single', function () {
+        return view('user.single');
+    })->name('single');
+    Route::get('/article/single', function () {
+        return view('user.articles.single');
+    })->name('article.single');
+    Route::get('/advance-search', function () {
+        return view('user.advanced-search');
+    });
 });
 
 
 
 /* Avoids 404
-Route::any('{query}', 
+Route::any('{query}',
   function() { return redirect('/'); })
   ->where('query', '.*');
 */
