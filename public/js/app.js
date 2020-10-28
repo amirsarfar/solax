@@ -142,14 +142,14 @@ function changeTheme(theme){
 
     if(theme == "dark"){
         $(".logo img").css("filter", "invert(0)");
-        $(".fa-moon")[0].classList.add("fa-sun")
+        $(".fa-moon")[0].classList.add("fa-sun");
+        $("img.back-image1").css('filter','brightness(40%)');
     }
     else{
         $(".logo img").css("filter", "invert(1)");
-        $(".fa-moon")[0].classList.remove("fa-sun")
+        $(".fa-moon")[0].classList.remove("fa-sun");
+        $("img.back-image1").css('filter','none');
     }
-    theme=="light"?$("img.back-image1").css('filter','none'):$("img.back-image1").css('filter','brightness(40%)');
-    theme=="dark"?$(".fa-moon")[0].classList.add("fa-sun"):$(".fa-moon")[0].classList.remove("fa-sun");
 
     darkTheme = theme=="dark";
     localStorage.setItem('theme', theme);

@@ -17,7 +17,7 @@
     max-width: 1600px;
 }
 .bg-card{
-    background-color: rgba(111, 111, 111, 0.5);
+    background-color: var(--theme-bg-5);
 }
 .border-r-all{
     border-radius: 5px;
