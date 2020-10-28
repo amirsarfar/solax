@@ -1181,15 +1181,22 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex justify-content-center">
-                                        <span class="p-1">1</span>
-                                        <span class="p-1">2</span>
-                                        <span class="p-1">3</span>
-                                        <span class="p-1">4</span>
-                                        <span class="p-1">5</span>
-                                        <span class="p-1">6</span>
-                                        <span class="p-1 border-black-50 text-warning">7</span>
+                                    
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul class="pagination justify-content-center" style="margin:20px 0">
+                                                <li class="page-item"><a class="page-link" href="#">قبلی</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">بعدی</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
+
                                 </div>
                     </div>
                     <div class="tab-pane border-radius-b  m-lg-0 px-1 bg-black-75 fade" id="commentUser" role="tabpanel"
@@ -1239,15 +1246,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-center">
-                                <span class="p-1">1</span>
-                                <span class="p-1">2</span>
-                                <span class="p-1">3</span>
-                                <span class="p-1">4</span>
-                                <span class="p-1">5</span>
-                                <span class="p-1">6</span>
-                                <span class="p-1 border-black-50 text-warning">7</span>
+
+                            <div class="row">
+                                <div class="col">
+                                    <ul class="pagination justify-content-center" style="margin:20px 0">
+                                        <li class="page-item"><a class="page-link" href="#">قبلی</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">بعدی</a></li>
+                                    </ul>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>

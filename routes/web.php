@@ -52,10 +52,11 @@ Route::group(['middleware'=>'language'],function ()
     Route::get('/articles', function () {
         return view('article.index');
     })->name('articles');
-
+    
     Route::get('/article/single', function () {
         return view('user.articles.single');
     })->name('article.single');
+
     Route::get('/advance-search', function () {
         return view('user.advanced-search');
     });

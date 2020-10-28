@@ -10,11 +10,16 @@
 
 @section('main-content')
     <div class="row w-90 mx-auto mt-5 no-gutters max-w-1">
-        <div class="col-xl-3 d-none col-4 d-md-block">
+        <div class="col-xl-3 col-md-4 order-2 order-md-1">
             <div class="row border-r-all border-yellow bg-card px-3 py-2 no-gutters ml-2">
                 <div class="col px-2">
                     <div class="row">جستجو شده:</div>
-                    <div class="row mt-3"> بالا شده تگ ها میاد</div>
+                    <div class="row mt-3">
+                        @for($i=1; $i<8;$i++)
+                            <span class="align-items-center d-inline-flex mt-2 rounded p-1 bg-5 mx-1"> 
+                                <i class="fas fa-times pl-1"></i>واقعیت مجازی</span>
+                        @endfor
+                    </div>
                 </div>
             </div>
             <div class="row border-r-all border-yellow bg-card mt-3 px-3 py-2 no-gutters ml-2">
@@ -38,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-9 col-md-8 col-12">
+        <div class="col-xl-9 col-md-8 order-1 order-md-2">
             <div class="row bg-card mx-1 h-48p border-r-all">
                 <form class="col" action="">
                     <div class="row justify-content-center">
@@ -58,7 +63,7 @@
                         <div class="col-2 custom-column justify-content-end">
                             <div class="meta-critic">
                                 <div>4.5</div>
-                                <img src="images/metaicon.png" alt="metacritic">
+                                <img src="{{ asset('images/metaicon.png') }}" alt="metacritic">
                             </div>
                         </div>
                         <div class="col-4">
@@ -75,7 +80,7 @@
                         <div class="col-2 custom-column justify-content-end">
                             <div class="meta-critic">
                                 <div>4.5</div>
-                                <img src="images/metaicon.png" alt="metacritic">
+                                <img src="{{ asset('images/metaicon.png') }}" alt="metacritic">
                             </div>
                         </div>
                         <div class="col-4">

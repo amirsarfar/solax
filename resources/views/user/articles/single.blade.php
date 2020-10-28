@@ -11,12 +11,14 @@
         <section>
             <div class="row mt-3">
                 <div class="col-md-4 order-2 order-md-1">
-                    <div class="input-group ">
-                        <input type="text" class="form-control bg-black-75 text-white border-warning" placeholder="بازی مورد نظر تو را جستجو کن" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <span class="input-group-text bg-warning" id="basic-addon2"><i class="fas fa-search text-dark"></i></span>
+                    <form action="#">
+                        <div class="input-group ">
+                            <input type="text" class="form-control bg-black-75 text-white border-warning" placeholder="بازی مورد نظر تو را جستجو کن" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button type="submit" class="input-group-text bg-warning border-0" id="basic-addon2"><i class="fas fa-search text-dark"></i></button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                     <div class="bg-black-75 rounded p-4 mt-2 border-warning">
                         <h6>آخرین اخبار</h6>
                         <hr class="bg-warning">
@@ -78,7 +80,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="d-flex justify-content-center">
                             <img src="{{asset('images/games/game-9.jpg')}}" class="img-fluid mt-2"  alt="">
                         </div>
                         <div class="mt-2">
@@ -198,14 +200,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-center">
-                                    <span class="p-1">1</span>
-                                    <span class="p-1">2</span>
-                                    <span class="p-1">3</span>
-                                    <span class="p-1">4</span>
-                                    <span class="p-1">5</span>
-                                    <span class="p-1">6</span>
-                                    <span class="p-1 border-black-50 text-warning">7</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="pagination justify-content-center" style="margin:20px 0">
+                                            <li class="page-item"><a class="page-link" href="#">قبلی</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                            <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">بعدی</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>

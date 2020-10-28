@@ -17,7 +17,7 @@
     max-width: 1600px;
 }
 .bg-card{
-    background-color: rgba(111, 111, 111, 0.5);
+    background-color: var(--theme-bg-4);
 }
 .border-r-all{
     border-radius: 5px;
@@ -78,13 +78,14 @@ a:hover{
 .search-button{
     border: none;
     background-color: var(--theme-yellow);
-    height: 1.5rem;
+    height: 2rem;
     width: 2rem;
     padding: 0;
     box-shadow: 0px 0px 10px #FFCC34;
     position: absolute;
-    left: 1rem;
-    top: 0.75rem;
+    left: 0.5rem;
+    top: 0.5rem;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .meta-critic img {
@@ -103,6 +104,9 @@ a:hover{
     margin-right: auto;
 }
 
+.bg-5{
+    background-color: var(--theme-bg-5);
+}
 
 .page-item.active .page-link{
     background-color: transparent;

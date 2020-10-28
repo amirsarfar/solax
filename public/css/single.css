@@ -231,3 +231,27 @@ img.back-image1 {
 ul.comment-bg-nav a.active {
     background-color: var(--theme-bg-6) !important;
 }
+
+.page-item.active .page-link{
+    background-color: transparent;
+    border: 1px solid var(--theme-yellow);
+    color: var(--theme-yellow);
+    border-radius: 5px;
+
+}
+.page-link:hover{
+    background-color: transparent;
+    border: none;
+    color: var(--theme-yellow);
+}
+.page-link{
+    background-color: transparent;
+    border: none;
+    color: var(--theme-text-2);
+}
+
+.page-item.disabled .page-link{
+    background-color: transparent;
+    border: none;
+    color: var(--theme-text-2);
+}
