@@ -11,12 +11,14 @@
         <section>
             <div class="row mt-3">
                 <div class="col-md-4 order-2 order-md-1">
-                    <div class="input-group ">
-                        <input type="text" class="form-control bg-black-75 text-white border-warning" placeholder="بازی مورد نظر تو را جستجو کن" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <span class="input-group-text bg-warning border-0" id="basic-addon2"><i class="fas fa-search text-dark"></i></span>
+                    <form action="#">
+                        <div class="input-group ">
+                            <input type="text" class="form-control bg-black-75 text-white border-warning" placeholder="بازی مورد نظر تو را جستجو کن" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button type="submit" class="input-group-text bg-warning border-0" id="basic-addon2"><i class="fas fa-search text-dark"></i></button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                     <div class="bg-black-75 rounded p-4 mt-2 border-warning">
                         <h6>آخرین اخبار</h6>
                         <hr class="bg-warning">

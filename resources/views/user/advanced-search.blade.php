@@ -48,15 +48,17 @@
                                     <i class="fas fa-stream "></i>
                                 </div>
                             </div>
-                            <div class="input-group mr-md-2">
-                                <input type="text" class="form-control bg-4 text-white border-warning"
-                                       placeholder="بازی مورد نظر تو را جستجو کن" aria-label="Recipient's username"
-                                       aria-describedby="basic-addon2">
-                                <div class="input-group-append">
-                                    <span class="input-group-text bg-warning border-0" id="basic-addon2"><i
-                                            class="fas fa-search text-dark"></i></span>
+                            <form action="#" class="input-group mr-md-2">
+                                <div class="input-group ">
+                                    <input type="text" class="form-control bg-4 text-white border-warning"
+                                           placeholder="بازی مورد نظر تو را جستجو کن" aria-label="Recipient's username"
+                                           aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button type="submit"  class="input-group-text bg-warning border-0" id="basic-addon2"><i
+                                                class="fas fa-search text-dark"></i></button>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                         <div class="row mt-2" id="filter" style="display: none">
                             <div class="col-md-4">
