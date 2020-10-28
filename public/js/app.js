@@ -148,9 +148,6 @@ function changeTheme(theme){
         $(".logo img").css("filter", "invert(1)");
         $(".fa-moon")[0].classList.remove("fa-sun")
     }
-
-    $(".logo img")[0].src = "images/logo_" + theme + ".png";
-    $(".logo img")[1].src = "images/logo_sq_" + theme + ".png";
     theme=="light"?$("img.back-image1").css('filter','none'):$("img.back-image1").css('filter','brightness(40%)');
     theme=="dark"?$(".fa-moon")[0].classList.add("fa-sun"):$(".fa-moon")[0].classList.remove("fa-sun");
 

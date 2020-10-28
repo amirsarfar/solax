@@ -24,7 +24,7 @@
   --light-theme-bg-1: #fff;
   --light-theme-bg-2: #f2f2f2;
   --light-theme-bg-3: #191d31;
-  --light-theme-bg-4: #fff;
+  --light-theme-bg-4: #ffffffb8;
   --light-theme-bg-5: #E5E5E5;
   --light-theme-bg-6: #fff;
   --light-theme-bg-7: #fff;
@@ -36,6 +36,8 @@
   --light-theme-text-1: #222;
   --light-theme-text-2: #3B3D40;
   --light-theme-text-3: #191d31;
+  --light-theme-text-4: #445445;
+  
   --light-theme-border-2: #fff;
   --light-theme-shadow: rgba(11, 11, 11, 0.3);
 
@@ -94,6 +96,19 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   /*box-shadow: var(--theme-shadow) 10px 0px 10px 15px;*/
+}
+
+.fa-google-plus:hover{
+  color: #C31A1F;
+}
+.fa-twitter:hover{
+  color: #1DA1F3;
+}
+.fa-telegram:hover{
+  color: #26A9DD;
+}
+.fa-facebook:hover{
+  color: #3A559F;
 }
 .search-bar {
   background-color: #4E5161;
