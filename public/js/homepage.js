@@ -1,17 +1,42 @@
 $(document).ready(function() {
     selectedCategory = "#category1";
     slideIndex = 0;
+    slideIndex2 = 0;
     
-    $(".category-selector").hover(
-        function() {
-            target = $(this).attr("data-target");
-            $(selectedCategory)[0].classList.remove("active");
-            $("div.category-selector[data-target='" + selectedCategory + "']")[0].classList.remove("active");
-            $(target)[0].classList.add("active");
-            $(this)[0].classList.add("active");
-            selectedCategory = target;
-        },
-        function() {});
+    if(isTouch){
+        $(".category-selector").click(
+            function() {
+                target = $(this).attr("data-target");
+                $(selectedCategory)[0].classList.remove("active");
+    
+                selectors = $(".category-selector");
+                for(i=0; i<selectors.length; i++)
+                    selectors[i].classList.remove("active");
+    
+                $(target)[0].classList.add("active");
+                $(this)[0].classList.add("active");
+                
+                selectedCategory = target;
+        });
+    }
+    else{
+        $(".category-selector").hover(
+            function() {
+                target = $(this).attr("data-target");
+                $(selectedCategory)[0].classList.remove("active");
+    
+                selectors = $(".category-selector");
+                for(i=0; i<selectors.length; i++)
+                    selectors[i].classList.remove("active");
+    
+                $(target)[0].classList.add("active");
+                $(this)[0].classList.add("active");
+                
+                selectedCategory = target;
+            },
+            function() {
+        });
+    }
 
     $(".carousel .right").click(function() {
         showSlide(++slideIndex);
@@ -20,16 +45,59 @@ $(document).ready(function() {
         showSlide(--slideIndex);
     });
 
-    $(".game-card-hoverable").hover(function(){
-        cards = $(".game-card-hoverable");
-        for(i=0; i<cards.length; i++){
-            cards[i].classList.remove("active");
-        }
-        $(this)[0].classList.add("active");
-    },function(){
-
+    $(".simple-carousel .right").click(function() {
+        showSlide2(++slideIndex2);
     });
+    $(".simple-carousel .left").click(function() {
+        showSlide2(--slideIndex2);
+    });
+
+    if(isTouch){
+        $(".game-card-hoverable").click(function(){
+            cards = $(".game-card-hoverable");
+            for(i=0; i<cards.length; i++){
+                cards[i].classList.remove("active");
+            }
+            $(this)[0].classList.add("active");
+        });
+    }else{
+        $(".game-card-hoverable").hover(function(){
+            cards = $(".game-card-hoverable");
+            for(i=0; i<cards.length; i++){
+                cards[i].classList.remove("active");
+            }
+            $(this)[0].classList.add("active");
+        },function(){
+
+        });
+    }
     
+    if(isTouch){
+        const style = document.createElement('style');
+
+        // add CSS styles
+        style.innerHTML = `
+            .coming-soon .game {
+                filter: grayscale(0%);
+            }
+            .coming-soon .game .info{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: center;
+                margin: 0 auto;
+                width: calc(100% - 1rem);
+                background-image: linear-gradient(rgba(11, 11, 11, 0), rgba(11, 11, 11, 0.9));
+                color: var(--dark-theme-text-1);
+                border-radius: 10px;
+                height: 50%;
+            }
+        `;
+
+        // append the style to the DOM in <head> section
+        document.head.appendChild(style);
+    }
+
     var ctx = document.getElementById('myChart').getContext('2d');
     var ctx2 = document.getElementById('myChart2').getContext('2d');
     var gradientStroke = ctx.createLinearGradient(0, 0, 0, 250);
@@ -137,5 +205,16 @@ function showSlide(i) {
     slideIndex = i;
 }
 
+function showSlide2(i) {
+    slides = $(".simple-carousel .slide");
+    for (j = 0; j < slides.length; j++) {
+        slides[j].classList.remove("active");
+    }
+    if (i < 0) { i = slides.length - 1; }
+    if (i >= slides.length) { i = 0; }
+
+    slides[i].classList.add("active");
+    slideIndex2 = i;
+}
 
 //$("ul[data-group='Companies'] li:not([data-company='Microsoft'])")

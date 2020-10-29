@@ -8,11 +8,11 @@
     <script src="{{asset('js/Chart.min.js')}}"></script>
 @endsection
 @section('main-content')
-    <div class="container-fluid"
-         style="background-image: url({{asset('images/games/game-5.jpg')}});height: 300px;background-size: cover; background-repeat: no-repeat ;">
+    <div class="container position-relative">
+        <img src="{{asset('images/games/game-5.jpg')}}" class="d-none d-lg-block img-lg-contain h-auto position-absolute z-index--3 w-100 img-lg-contain" alt="">
         <div class="mt-1 mt-lg-3">
             <div class="row pr-lg-3">
-                <div class="col-lg-4 mt-1 mt-lg-0 p-lg-0">
+                <div class="col-lg-4 mt-1 mt-lg-0 p-lg-0 ml-1 ml-lg-0">
                     <div class="ml-1 border-div item-1 d-flex flex-column justify-content-between rounded">
                         <div>
                             <div class="d-flex justify-content-between  m-2 ">
@@ -819,17 +819,17 @@
             <div class="col-lg-6 m-3 m-lg-0">
                 <div class="row bg-black-75 p-2 rounded">
                     <div class="col-10 m-0 p-0 ">
-                        <img src="{{asset('images/games/game-2.jpg')}}" class="rounded card-img" alt=""
+                        <img src="{{asset('images/games/game-2.jpg')}}" id="imgLarge" class="rounded object-fit-cover card-img" alt=""
                              style="height: 340px;">
                     </div>
                     <div class="col-2 m-0 p-0 text-center">
-                        <img src="{{asset('images/games/game-2.jpg')}}" class="rounded card-img mr-1 mb-1" alt=""
+                        <img src="{{asset('images/games/game-3.jpg')}}" onclick="changeImg(this.src)" class="rounded object-fit-cover card-img mr-1 mb-1" alt=""
                              style="height: 70px;">
-                        <img src="{{asset('images/games/game-2.jpg')}}" class="rounded card-img mr-1 mb-1" alt=""
+                        <img src="{{asset('images/games/game-1.jpg')}}" onclick="changeImg(this.src)" class="rounded object-fit-cover card-img mr-1 mb-1" alt=""
                              style="height: 70px;">
-                        <img src="{{asset('images/games/game-2.jpg')}}" class="rounded card-img mr-1 mb-1" alt=""
+                        <img src="{{asset('images/games/game-8.jpg')}}" onclick="changeImg(this.src)" class="rounded object-fit-cover card-img mr-1 mb-1" alt=""
                              style="height: 70px;">
-                        <img src="{{asset('images/games/game-2.jpg')}}" class="rounded card-img mr-1 mb-1" alt=""
+                        <img src="{{asset('images/games/game-9.jpg')}}" onclick="changeImg(this.src)" class="rounded object-fit-cover card-img mr-1 mb-1" alt=""
                              style="height: 70px;">
                         <a href="#" class="text-decoration-none ">
                             <h6 class="bg-black-85 text-white rounded py-2 mt-1 mr-1 ">23 مورد دیگر</h6></a>
@@ -1181,7 +1181,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="row">
                                         <div class="col">
                                             <ul class="pagination justify-content-center" style="margin:20px 0">
@@ -1261,12 +1261,19 @@
                                     </ul>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
-            <img src="{{asset('images/games/game-4.jpg')}}" class="back-image1 w-100 h-auto d-none d-lg-block" alt="">
+            <img src="{{asset('images/games/game-4.jpg')}}" class="img-container back-image1 w-100 h-auto d-none d-lg-block" alt="">
         </div>
     </div>
+@endsection
+@section('script')
+    <script>
+        function changeImg($src){
+            document.getElementById('imgLarge').src = $src ;
+        }
+    </script>
 @endsection
