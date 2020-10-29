@@ -22,11 +22,11 @@ $( document ).ready(function() {
     else{closeSidebar();}
 
     //setTimeout(function(){$(".spinner-wrapper")[0].style["display"] = "none";}, 1250);
-    $(".spinner-wrapper")[0].style["display"] = "none";
+    //$(".spinner-wrapper")[0].style["display"] = "none";
 });
 $(window).on('load',function() {
     //setTimeout(function(){$(".spinner-wrapper")[0].style["display"] = "none";}, 250);
-    //$(".spinner-wrapper")[0].style["display"] = "none"
+    $(".spinner-wrapper")[0].style["display"] = "none"
 });
 function sidebarHoverHandler(selectedItem) {
     items = $(".sidebar-item");

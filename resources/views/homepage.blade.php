@@ -22,16 +22,28 @@
                     <div class="slide active">
                        <div class="row h-100 no-gutters">
                             <div class="col-4 h-100">
-                                <div class="row h-50 no-gutters">
+                                <div class="row h-50 no-gutters position-relative">
                                     <img class="h-100 w-100 object-cover" src="images/header2.jpg" alt="header2">
+                                    <div class="position-absolute d-flex flex-column w-100 h-50 back-visible justify-content-end px-3" style="bottom: 0;">
+                                        <div>واقعیت مجازی</div>
+                                        <div class="font-size-24">Evolve-2K</div>
+                                    </div>
                                 </div>
                                 <div class="row h-50 no-gutters">
                                     <img class="h-100 w-100 object-cover" src="images/header3.jpg" alt="header2">
+                                    <div class="position-absolute d-flex flex-column w-100 h-50 back-visible justify-content-end px-3" style="bottom: 0;">
+                                        <div>واقعیت مجازی</div>
+                                        <div class="font-size-24">Evolve-2K</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-8 h-100">
                                 <div class="row h-100 no-gutters">
                                     <img class="h-100 w-100 object-cover" src="images/header4.jpg" alt="header2">
+                                    <div class="position-absolute d-flex flex-column w-100 h-50 back-visible justify-content-end px-3" style="bottom: 0;">
+                                        <div>واقعیت مجازی</div>
+                                        <div class="font-size-24">Evolve-2K</div>
+                                    </div>
                                 </div>
                             </div>
                        </div>
@@ -39,21 +51,33 @@
                     @for ($i = 0; $i < 4; $i++)
                     <div class="slide">
                         <div class="row h-100 no-gutters">
-                             <div class="col-4">
-                                 <div class="row h-50 no-gutters">
+                             <div class="col-4 h-100">
+                                 <div class="row h-50 no-gutters position-relative">
                                      <img class="h-100 w-100 object-cover" src="images/header{{rand(1,9)}}.jpg" alt="header2">
+                                     <div class="position-absolute d-flex flex-column w-100 h-50 back-visible justify-content-end px-3" style="bottom: 0;">
+                                         <div>واقعیت مجازی</div>
+                                         <div class="font-size-24">Evolve-2K</div>
+                                     </div>
                                  </div>
                                  <div class="row h-50 no-gutters">
                                      <img class="h-100 w-100 object-cover" src="images/header{{rand(1,9)}}.jpg" alt="header2">
+                                     <div class="position-absolute d-flex flex-column w-100 h-50 back-visible justify-content-end px-3" style="bottom: 0;">
+                                         <div>واقعیت مجازی</div>
+                                         <div class="font-size-24">Evolve-2K</div>
+                                     </div>
                                  </div>
                              </div>
-                             <div class="col-8">
+                             <div class="col-8 h-100">
                                  <div class="row h-100 no-gutters">
                                      <img class="h-100 w-100 object-cover" src="images/header{{rand(1,9)}}.jpg" alt="header2">
+                                     <div class="position-absolute d-flex flex-column w-100 h-50 back-visible justify-content-end px-3" style="bottom: 0;">
+                                         <div>واقعیت مجازی</div>
+                                         <div class="font-size-24">Evolve-2K</div>
+                                     </div>
                                  </div>
                              </div>
                         </div>
-                    </div>
+                     </div>
                     @endfor
                   
                 </div>
@@ -276,8 +300,8 @@
 
 <div class="no-gutters row category-overview max-w-1">
     <div class="col-12">
-        <div class="row no-gutters">
-            <div class="col-10">
+        <div class="row no-gutters mb-3 mb-lg-0">
+            <div class="col-lg-10">
                 <div class="row justify-content-between">
                     <div>تازه ترین ها</div>
                     <div><a href="">مشاهده همه</a></div>
@@ -286,82 +310,82 @@
         </div>
         <div class="row no-gutters">
             <div class="col-lg-10 order-3 order-lg-2 category-item active " id="category1">
-                    <div class="row no-gutters my-2">
-                        @for ($k = 0; $k < 15; $k++)
-                        <div class="col-4  col-md-3 col-lg-2  ">
-                            <div class="game-card">
-                                <div class="row">
-                                    <img class="header" src="images/header{{rand(1,9)}}.jpg" alt="header">
+                <div class="row no-gutters my-2">
+                    @for ($k = 0; $k < 18; $k++)
+                    <div class="col-4  col-md-3 col-lg-2  ">
+                        <div class="game-card">
+                            <div class="row">
+                                <img class="header" src="images/header{{rand(1,9)}}.jpg" alt="header">
+                            </div>
+                            <div class="row">
+                                <div class="title">
+                                    <div class="text">Dota 2</div>
+                                    <img src="images/gicon{{rand(1,9)}}.jpg" alt="gicon">
                                 </div>
-                                <div class="row">
-                                    <div class="title">
-                                        <div class="text">Dota 2</div>
-                                        <img src="images/gicon{{rand(1,9)}}.jpg" alt="gicon">
+                            </div>
+                            <div class="row">
+                                <div class="online pb-2">
+                                    <div class="count mt-auto">
+                                        بازیکنان آنلاین: ۲۰۰۰
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="online pb-2">
-                                        <div class="count mt-auto">
-                                            بازیکنان آنلاین: ۲۰۰۰
-                                        </div>
-                                        <div class="progress" style="height:5px">
-                                            <div class="progress-bar" style="width:40%;height:5px"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center">
-                                    <div class="date">
-                                        2020/10/03
-                                    </div>
-                                    <div class="meta-critic">
-                                        <div>4.5</div>
-                                        <img src="images/metaicon.png" alt="metacritic">
+                                    <div class="progress" style="height:5px">
+                                        <div class="progress-bar" style="width:40%;height:5px"></div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="row align-items-center">
+                                <div class="date">
+                                    2020/10/03
+                                </div>
+                                <div class="meta-critic">
+                                    <div>4.5</div>
+                                    <img src="images/metaicon.png" alt="metacritic">
+                                </div>
+                            </div>
                         </div>
-                        @endfor
                     </div>
-            </div>
-            @for ($i = 2; $i < 7; $i++)
-                <div class="col-10 category-item" id="category{{ $i }}">
-                    @for ($j = 0; $j < 3; $j++)
-                        <div class="row my-2">
-                            @for ($k = 0; $k < 5; $k++)
-                            <div class="col game-card">
-                                <div class="row">
-                                    <img class="header" src="images/header{{rand(1,9)}}.jpg" alt="header">
-                                </div>
-                                <div class="row">
-                                    <div class="title">
-                                        <div class="text">Dota 2</div>
-                                        <img src="images/gicon{{rand(1,9)}}.jpg" alt="gicon">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="online pb-2">
-                                        <div class="count mt-auto">
-                                            بازیکنان آنلاین: ۲۰۰۰
-                                        </div>
-                                        <div class="progress" style="height:5px">
-                                            <div class="progress-bar" style="width:40%;height:5px"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center">
-                                    <div class="date">
-                                        2020/10/03
-                                    </div>
-                                    <div class="meta-critic">
-                                        <div>4.5</div>
-                                        <img src="images/metaicon.png" alt="metacritic">
-                                    </div>
-                                </div>
-                            </div>
-                            @endfor
-                        </div>
                     @endfor
                 </div>
+            </div>
+            @for ($i = 2; $i < 7; $i++)
+            <div class="col-lg-10 order-3 order-lg-2 category-item" id="category{{$i}}">
+                <div class="row no-gutters my-2">
+                    @for ($k = 0; $k < 18; $k++)
+                    <div class="col-4  col-md-3 col-lg-2  ">
+                        <div class="game-card">
+                            <div class="row">
+                                <img class="header" src="images/header{{rand(1,9)}}.jpg" alt="header">
+                            </div>
+                            <div class="row">
+                                <div class="title">
+                                    <div class="text">Dota 2</div>
+                                    <img src="images/gicon{{rand(1,9)}}.jpg" alt="gicon">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="online pb-2">
+                                    <div class="count mt-auto">
+                                        بازیکنان آنلاین: ۲۰۰۰
+                                    </div>
+                                    <div class="progress" style="height:5px">
+                                        <div class="progress-bar" style="width:40%;height:5px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="date">
+                                    2020/10/03
+                                </div>
+                                <div class="meta-critic">
+                                    <div>4.5</div>
+                                    <img src="images/metaicon.png" alt="metacritic">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endfor
+                </div>
+            </div>
             @endfor
             {{-- <div class="col-lg-2 ">
                 <div class="px-3">
@@ -378,29 +402,47 @@
                         </div>
                     </div>
                 </div> --}}
-                <div class="col-lg-2 order-2 order-lg-3 d-flex d-lg-block">
-                @for ($i = 2; $i < 7; $i++)
-                <div class=" w-100 d-flex " style="height: 110px !important;background-color: rgba(11,11,11,.5);">
-                    <div class="d-flex justify-content-end  position-relative w-100" >
-                    <img class="position-absolute z-index--3 object-cover" src="{{asset('images/header'.$i.'.jpg')}}" alt="" width="100%" height="110px">
-                      <div class="d-flex align-self-end ">
-                          <div class="d-flex flex-column text-left">
-                              <div class="font-size-18">
-                                        نام دسته بندی
-                              </div>
-                              <div class="font-size-16 d-none d-lg-block ">
+            <div class="col-lg-2 order-2 order-lg-3 d-flex d-lg-block">
+                <div class=" w-100 d-flex category-selector position-relative active" data-target="#category1" style="height: 110px !important;background-color: rgba(11,11,11,.5);">
+                    <div class="d-flex position-relative w-100" >
+                        <img class="position-absolute z-index--3 object-cover" src="{{asset('images/header1.jpg')}}" alt="" width="100%" height="110px">
+                        <div class="d-flex align-items-end justify-content-end w-100 h-75 align-self-end back-visible">
+                            <div class="d-flex flex-column text-left">
+                                <div class="font-size-18">
+                                        RPG
+                                </div>
+                                <div class="font-size-16 d-none d-lg-block ">
                                         (655)
-                              </div>
-                          </div>
-                          <div>
-                            <h2 class="h1 d-none d-lg-block">{{$i}}</h2>
-                      </div>
-                      </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-none d-lg-block font-size-48">1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @for ($i = 2; $i < 7; $i++)
+                <div class=" w-100 d-flex category-selector position-relative" data-target="#category{{$i}}" style="height: 110px !important;background-color: rgba(11,11,11,.5);">
+                    <div class="d-flex position-relative w-100" >
+                        <img class="position-absolute z-index--3 object-cover" src="{{asset('images/header'.$i.'.jpg')}}" alt="" width="100%" height="110px">
+                        <div class="d-flex align-items-end justify-content-lg-end justify-content-center w-100 h-75 align-self-end back-visible">
+                            <div class="d-flex flex-column text-left">
+                                <div class="font-size-18">
+                                        Arcade
+                                </div>
+                                <div class="font-size-16 d-none d-lg-block ">
+                                        (655)
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-none d-lg-block font-size-48">{{$i}}</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 @endfor
-
             </div>
+
         </div>
     </div>
 </div>
@@ -432,59 +474,72 @@
         </div>
         <img src="images/mortal.png" alt="mortal" class="back-image">
         <div class="row no-gutters column-offer-inner">
-            <div class="col-md-3 height-1">
+            <div class="col-md-3 height-1 d-flex flex-column">
                 <div class="row mt-3">
-                    بالاترین ها
+                    تخفیف دارها
                 </div>
-                <div class="row mt-2">
-                    <img src="images/upimg2.jpg" alt="upimg" style="height: 100%;width:100%;object-fit:cover;">
+                <div class="row mt-2 flex-grow-1">
+                    <div class="simple-carousel w-100">
+                        <div class="stage h-100">
+                            <div class="slide active h-100">
+                                <img class="border-r-all w-100 h-100 object-cover" src="images/upimg2.jpg" alt="upimg">
+                            </div>
+                            @for ($i = 0; $i < 5; $i++)
+                            <div class="slide h-100">
+                                <img class="border-r-all w-100 h-100 object-cover" src="images/upimg{{rand(1,6)}}.jpg" alt="upimg">
+                            </div>
+                            @endfor
+                        </div>
+                        <div class="right position-absolute"><i class="fa fa-angle-right fa-3x"></i></div>
+                        <div class="left position-absolute"><i class="fa fa-angle-left fa-3x"></i></div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6 height-1">
                 <div class="row mt-3">
-                    بالاترین ها
+                    تازه ترین های رایگان
                 </div>
-                @for ($i = 0; $i < 2; $i++)
-                <div class="row my-2 h-50">
-                    @for ($j = 0; $j < 3; $j++)
-                    <div class="game-card">
-                        <div class="row">
-                            <img class="header" src="images/header{{rand(1,9)}}.jpg" alt="header">
-                        </div>
-                        <div class="row">
-                            <div class="title">
-                                <div class="text">Dota 2</div>
-                                <img src="images/gicon{{rand(1,9)}}.jpg" alt="gicon">
+                <div class="row no-gutters">
+                    @for ($i = 0; $i < 6; $i++)
+                    <div class="col-4 m-0">
+                        <div class="game-card">
+                            <div class="row">
+                                <img class="header" src="images/header{{rand(1,9)}}.jpg" alt="header">
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="online pb-2">
-                                <div class="count mt-auto">
-                                    بازیکنان آنلاین: ۲۰۰۰
-                                </div>
-                                <div class="progress" style="height:5px">
-                                    <div class="progress-bar" style="width:40%;height:5px"></div>
+                            <div class="row">
+                                <div class="title">
+                                    <div class="text">Dota 2</div>
+                                    <img src="images/gicon{{rand(1,9)}}.jpg" alt="gicon">
                                 </div>
                             </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="date">
-                                2020/10/03
+                            <div class="row">
+                                <div class="online pb-2">
+                                    <div class="count mt-auto">
+                                        بازیکنان آنلاین: ۲۰۰۰
+                                    </div>
+                                    <div class="progress" style="height:5px">
+                                        <div class="progress-bar" style="width:40%;height:5px"></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="meta-critic">
-                                <div>4.5</div>
-                                <img src="images/metaicon.png" alt="metacritic">
+                            <div class="row align-items-center">
+                                <div class="date">
+                                    2020/10/03
+                                </div>
+                                <div class="meta-critic">
+                                    <div>4.5</div>
+                                    <img src="images/metaicon.png" alt="metacritic">
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
-                    @endfor
-                    
+                    @endfor   
                 </div>
-                @endfor   
             </div>
             <div class="col-md-3 height-1">
                 <div class="row mt-3">
-                    بالاترین ها
+                    پرفروش ترین ها
                 </div>
                 <div class="row game-card-hoverable active mt-2">
                     <div class="col">
@@ -507,14 +562,14 @@
                                 Category
                             </div>
                             <div class="col icons">
-                                <div class="row">
-                                    <i class="fa fa-home"></i>
-                                    <i class="fa fa-home"></i>
-                                    <i class="fa fa-home"></i>
+                                <div class="row w-100 justify-content-around">
+                                    <i class="fab fa-steam"></i>
+                                    <i class="fab fa-windows"></i>
+                                    <i class="fab fa-linux"></i>
                                 </div>
-                                <div class="row">
-                                    <i class="fa fa-home"></i>
-                                    <i class="fa fa-home"></i>
+                                <div class="row w-100 justify-content-around color-yellow">
+                                    <i class="fal fa-gift"></i>
+                                    <i class="fal fa-key-skeleton"></i>
                                 </div>
                             </div>
                             <div class="col">
@@ -545,14 +600,14 @@
                                 Category
                             </div>
                             <div class="col icons">
-                                <div class="row">
-                                    <i class="fa fa-home"></i>
-                                    <i class="fa fa-home"></i>
-                                    <i class="fa fa-home"></i>
+                                <div class="row w-100 justify-content-around">
+                                    <i class="fab fa-steam"></i>
+                                    <i class="fab fa-windows"></i>
+                                    <i class="fab fa-linux"></i>
                                 </div>
-                                <div class="row">
-                                    <i class="fa fa-home"></i>
-                                    <i class="fa fa-home"></i>
+                                <div class="row w-100 justify-content-around color-yellow">
+                                    <i class="fal fa-gift"></i>
+                                    <i class="fal fa-key-skeleton"></i>
                                 </div>
                             </div>
                             <div class="col">
@@ -581,9 +636,9 @@
                     <div class="title">Dota 2</div>
                     <div class="category">Strategy</div>
                     <div class="icons">
-                        <i class="fa fa-gift"></i>
-                        <i class="fa fa-gift"></i>
-                        <i class="fa fa-gift"></i>
+                        <i class="fab fa-steam"></i>
+                        <i class="fab fa-windows"></i>
+                        <i class="fab fa-linux"></i>
                     </div>
                 </div>
             </div>
@@ -624,7 +679,7 @@
                             <img class="h-40p w-40p" src="{{ asset('images/gicon'. rand(1,9) .'.jpg') }}" alt="">
                         </div>
                     </div>
-                    <div class="row align-items-center mx-2 mb-3">
+                    <div class="row align-items-center mx-2 mb-1">
                         <div class="col">
                             بازیکنان آنلاین: 2000
                         </div>

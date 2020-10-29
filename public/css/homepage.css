@@ -26,6 +26,9 @@
 .border-r-all{
     border-radius: 10px;
 }
+.border-r-all-5{
+    border-radius: 5px;
+}
 .main-content a{
     color: var(--theme-yellow);
 }
@@ -62,7 +65,7 @@
     display: none;
     width: 100%;
     height: 100%;
-
+    color: var(--dark-theme-text-1);
     animation-name: fadeed;
     animation-duration: 1.5s;
 }
@@ -381,22 +384,28 @@ img.back-image {
 }
 
 .category-overview .category-selector {
-    width: 100%;
     filter: grayscale(80%);
-    position: relative;
     transition: filter 0.5s, transform 0.5s;
 }
 
 .category-overview .category-selector.active {
     filter: grayscale(0%);
-    transform: scale(1.2);
+    transform: scale(1.2) translateX(-1.5rem);
     z-index: 1;
+    color: var(--theme-yellow);
 }
-
+.back-visible{
+    background-image: linear-gradient(rgba(11,11,11,0),rgba(11,11,11,0.3),rgba(11,11,11,0.7),rgba(11,11,11,0.9),rgba(11,11,11,0.9));
+}
+.font-size-48{
+    font-size: 3rem;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+/*
 .category-overview .category-selector img {
     width: 100%;
     object-fit: cover;
-}
+}*/
 .z-index--3{
     z-index:-3 !important;
 }
@@ -406,6 +415,10 @@ img.back-image {
 .font-size-18 {
     font-size: 1.125rem !important;
 }
+.font-size-24{
+    font-size: 1.5rem;
+}
+/*
 .category-selector .category-text {
     position: absolute;
     width: 100%;
@@ -437,7 +450,7 @@ img.back-image {
     justify-content: end;
     align-items: flex-end;
     padding-right: 0;
-}
+}*/
 
 .game-card img.header {
     width: 100%;
@@ -513,7 +526,6 @@ img.back-image {
 }
 
 .coming-soon .game:hover .info {
-    display: unset;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -554,6 +566,10 @@ img.back-image {
 
 .game-card-hoverable .hover-show {
     display: none;
+    
+    animation-name: fadeed;
+    animation-duration: 1.5s;
+
 }
 
 .game-card-hoverable .icons {
@@ -652,6 +668,31 @@ img.back-image {
 .font-16{
     font-size: 1rem;
 }
+
+.simple-carousel .slide{
+    display: none;
+
+    animation-name: fadeed;
+    animation-duration: 1.5s;
+}
+.simple-carousel .slide.active{
+    display: block;
+}
+.simple-carousel .right{
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    color: var(--theme-yellow);
+}
+.simple-carousel .left{
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    color: var(--theme-yellow);
+}
+.color-yellow{
+    color: var(--theme-yellow);
+}
 /* ---------------------------------------------------- */
 
 @media only screen and (max-width: 500px) {
@@ -707,6 +748,12 @@ img.back-image {
         transform: rotate(90deg);
         margin: 0.5rem 0;
     }*/
+}
+
+@media only screen and (max-width: 991px){
+    .category-overview .category-selector.active {
+        transform: scale(1.2);
+    }
 }
 
 @media only screen and (max-width: 1200px) {
