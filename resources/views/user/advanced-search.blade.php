@@ -11,7 +11,7 @@
         <section>
             <div class="row mt-5">
                 <div class="col-md-4 order-2 order-md-1">
-                    <div class="bg-4 rounded p-3 mt-2 border-warning">
+                    <div class="bg-4 rounded p-3 mt-2 mt-lg-0 border-warning">
                         <h6>جستجو شده :</h6>
                         @for($i=1; $i<8;$i++)
                             <span class="align-items-center d-inline-flex mt-2 rounded p-1 bg-5 mx-1">
