@@ -8,11 +8,11 @@
     <script src="{{asset('js/Chart.min.js')}}"></script>
 @endsection
 @section('main-content')
-    <div class="container-fluid"
-         style="background-image: url({{asset('images/games/game-5.jpg')}});height: 300px;background-size: cover; background-repeat: no-repeat ;">
+    <div class="container position-relative">
+        <img src="{{asset('images/games/game-5.jpg')}}" class="d-none d-lg-block img-lg-contain h-auto position-absolute z-index--3 w-100 img-lg-contain" alt="">
         <div class="mt-1 mt-lg-3">
             <div class="row pr-lg-3">
-                <div class="col-lg-4 mt-1 mt-lg-0 p-lg-0">
+                <div class="col-lg-4 mt-1 mt-lg-0 p-lg-0 ml-1 ml-lg-0">
                     <div class="ml-1 border-div item-1 d-flex flex-column justify-content-between rounded">
                         <div>
                             <div class="d-flex justify-content-between  m-2 ">
@@ -1181,7 +1181,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="row">
                                         <div class="col">
                                             <ul class="pagination justify-content-center" style="margin:20px 0">
@@ -1261,12 +1261,12 @@
                                     </ul>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
-            <img src="{{asset('images/games/game-4.jpg')}}" class="back-image1 w-100 h-auto d-none d-lg-block" alt="">
+            <img src="{{asset('images/games/game-4.jpg')}}" class="img-container back-image1 w-100 h-auto d-none d-lg-block" alt="">
         </div>
     </div>
 @endsection

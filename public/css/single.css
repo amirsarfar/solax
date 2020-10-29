@@ -19,6 +19,17 @@
         display: none !important;
     }
 }
+@media (min-width: 1200px){
+   .container {
+        max-width: 1500px !important;
+    }
+    .img-lg-contain{
+        background-size: contain
+    }
+    .img-container {
+        max-width: 1500px !important;
+    }
+}
 ::-webkit-scrollbar {
     width: 7px;
     border-radius: 5px;
@@ -40,6 +51,9 @@
 ::-webkit-scrollbar-thumb:hover {
     border-radius: 5px;
     background: #B8B6B4;
+}
+.z-index--3{
+    z-index:-3 !important;
 }
 .text-dark {
     color: var(--theme-bg-1) !important;
