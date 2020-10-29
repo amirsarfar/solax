@@ -52,6 +52,9 @@
     border-radius: 5px;
     background: #B8B6B4;
 }
+.object-fit-cover {
+    object-fit: cover !important;
+}
 .z-index--3{
     z-index:-3 !important;
 }

@@ -819,17 +819,17 @@
             <div class="col-lg-6 m-3 m-lg-0">
                 <div class="row bg-black-75 p-2 rounded">
                     <div class="col-10 m-0 p-0 ">
-                        <img src="{{asset('images/games/game-2.jpg')}}" id="imgLarge" class="rounded card-img" alt=""
+                        <img src="{{asset('images/games/game-2.jpg')}}" id="imgLarge" class="rounded object-fit-cover card-img" alt=""
                              style="height: 340px;">
                     </div>
                     <div class="col-2 m-0 p-0 text-center">
-                        <img src="{{asset('images/games/game-3.jpg')}}" onclick="changeImg(this.src)" class="rounded card-img mr-1 mb-1" alt=""
+                        <img src="{{asset('images/games/game-3.jpg')}}" onclick="changeImg(this.src)" class="rounded object-fit-cover card-img mr-1 mb-1" alt=""
                              style="height: 70px;">
-                        <img src="{{asset('images/games/game-1.jpg')}}" onclick="changeImg(this.src)" class="rounded card-img mr-1 mb-1" alt=""
+                        <img src="{{asset('images/games/game-1.jpg')}}" onclick="changeImg(this.src)" class="rounded object-fit-cover card-img mr-1 mb-1" alt=""
                              style="height: 70px;">
-                        <img src="{{asset('images/games/game-8.jpg')}}" onclick="changeImg(this.src)" class="rounded card-img mr-1 mb-1" alt=""
+                        <img src="{{asset('images/games/game-8.jpg')}}" onclick="changeImg(this.src)" class="rounded object-fit-cover card-img mr-1 mb-1" alt=""
                              style="height: 70px;">
-                        <img src="{{asset('images/games/game-9.jpg')}}" onclick="changeImg(this.src)" class="rounded card-img mr-1 mb-1" alt=""
+                        <img src="{{asset('images/games/game-9.jpg')}}" onclick="changeImg(this.src)" class="rounded object-fit-cover card-img mr-1 mb-1" alt=""
                              style="height: 70px;">
                         <a href="#" class="text-decoration-none ">
                             <h6 class="bg-black-85 text-white rounded py-2 mt-1 mr-1 ">23 مورد دیگر</h6></a>
