@@ -6,12 +6,18 @@ $(document).ready(function() {
         function() {
             target = $(this).attr("data-target");
             $(selectedCategory)[0].classList.remove("active");
-            $("div.category-selector[data-target='" + selectedCategory + "']")[0].classList.remove("active");
+
+            selectors = $(".category-selector");
+            for(i=0; i<selectors.length; i++)
+                selectors[i].classList.remove("active");
+
             $(target)[0].classList.add("active");
             $(this)[0].classList.add("active");
+            
             selectedCategory = target;
         },
-        function() {});
+        function() {
+    });
 
     $(".carousel .right").click(function() {
         showSlide(++slideIndex);

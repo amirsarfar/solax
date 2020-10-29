@@ -381,9 +381,7 @@ img.back-image {
 }
 
 .category-overview .category-selector {
-    width: 100%;
     filter: grayscale(80%);
-    position: relative;
     transition: filter 0.5s, transform 0.5s;
 }
 
@@ -392,11 +390,11 @@ img.back-image {
     transform: scale(1.2);
     z-index: 1;
 }
-
+/*
 .category-overview .category-selector img {
     width: 100%;
     object-fit: cover;
-}
+}*/
 .z-index--3{
     z-index:-3 !important;
 }
@@ -406,6 +404,7 @@ img.back-image {
 .font-size-18 {
     font-size: 1.125rem !important;
 }
+/*
 .category-selector .category-text {
     position: absolute;
     width: 100%;
@@ -437,7 +436,7 @@ img.back-image {
     justify-content: end;
     align-items: flex-end;
     padding-right: 0;
-}
+}*/
 
 .game-card img.header {
     width: 100%;
