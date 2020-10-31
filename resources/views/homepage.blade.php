@@ -51,35 +51,35 @@
                     @for ($i = 0; $i < 4; $i++)
                     <div class="slide">
                         <div class="row h-100 no-gutters">
-                             <div class="col-4 h-100">
-                                 <div class="row h-50 no-gutters position-relative">
-                                     <img class="h-100 w-100 object-cover" src="images/header{{rand(1,9)}}.jpg" alt="header2">
-                                     <div class="position-absolute d-flex flex-column w-100 h-50 back-visible justify-content-end px-3" style="bottom: 0;">
-                                         <div>واقعیت مجازی</div>
-                                         <div class="font-size-24">Evolve-2K</div>
-                                     </div>
-                                 </div>
-                                 <div class="row h-50 no-gutters">
-                                     <img class="h-100 w-100 object-cover" src="images/header{{rand(1,9)}}.jpg" alt="header2">
-                                     <div class="position-absolute d-flex flex-column w-100 h-50 back-visible justify-content-end px-3" style="bottom: 0;">
-                                         <div>واقعیت مجازی</div>
-                                         <div class="font-size-24">Evolve-2K</div>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-8 h-100">
-                                 <div class="row h-100 no-gutters">
-                                     <img class="h-100 w-100 object-cover" src="images/header{{rand(1,9)}}.jpg" alt="header2">
-                                     <div class="position-absolute d-flex flex-column w-100 h-50 back-visible justify-content-end px-3" style="bottom: 0;">
-                                         <div>واقعیت مجازی</div>
-                                         <div class="font-size-24">Evolve-2K</div>
-                                     </div>
-                                 </div>
-                             </div>
+                            <div class="col-4 h-100">
+                                <div class="row h-50 no-gutters position-relative">
+                                    <img class="h-100 w-100 object-cover" src="images/header{{rand(1,9)}}.jpg" alt="header2">
+                                    <div class="position-absolute d-flex flex-column w-100 h-50 back-visible justify-content-end px-3" style="bottom: 0;">
+                                        <div>واقعیت مجازی</div>
+                                        <div class="font-size-24">Evolve-2K</div>
+                                    </div>
+                                </div>
+                                <div class="row h-50 no-gutters">
+                                    <img class="h-100 w-100 object-cover" src="images/header{{rand(1,9)}}.jpg" alt="header2">
+                                    <div class="position-absolute d-flex flex-column w-100 h-50 back-visible justify-content-end px-3" style="bottom: 0;">
+                                        <div>واقعیت مجازی</div>
+                                        <div class="font-size-24">Evolve-2K</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8 h-100">
+                                <div class="row h-100 no-gutters">
+                                    <img class="h-100 w-100 object-cover" src="images/header{{rand(1,9)}}.jpg" alt="header2">
+                                    <div class="position-absolute d-flex flex-column w-100 h-50 back-visible justify-content-end px-3" style="bottom: 0;">
+                                        <div>واقعیت مجازی</div>
+                                        <div class="font-size-24">Evolve-2K</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
+                    </div>
                     @endfor
-                  
+                
                 </div>
             </div>
         <div class="left"><i class="fa fa-angle-left fa-3x"></i></div>

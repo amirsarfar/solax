@@ -2,7 +2,7 @@ $(document).ready(function() {
     selectedCategory = "#category1";
     slideIndex = 0;
     slideIndex2 = 0;
-    
+
     if(isTouch){
         $(".category-selector").click(
             function() {

@@ -2,7 +2,7 @@
 $( document ).ready(function() {
     sidebarOpen = true;
     darkTheme = true;
-    isMobileUser = (window.innerWidth < 576);
+    
     sidebarWidth = 200;
     hoveredRecently = false;
     isTouch = ('ontouchstart' in document.documentElement);
@@ -18,16 +18,80 @@ $( document ).ready(function() {
     $(".header-carousel .outer-stage .stage").css("width", (stageChildren*416).toString()+"px")
     $(".header-carousel .outer-stage")[0].scroll(0,0);
 
-    if(!isMobileUser){openSidebar();}
-    else{closeSidebar();}
+    
+
+
+    $(".sidebar-item").hover(
+        function() {
+            if(!hoveredRecently){
+                sidebarHoverHandler($(this).attr("data-target"));
+            }
+
+        }, function() { }
+    );
+
+    $(".sidebar-child").hover(
+        function() {
+            if(!hoveredRecently){
+                sidebarHoverHandler("#"+$(this).parent()[0]["id"]);
+            }
+        },
+        function(){ }
+    );
+
+    $(".main-content").click(function(e) {
+        closeSidebar();
+    });
+
+    $( window ).resize(function() {
+        isMobileUser = (window.innerWidth < 576);
+        closeSidebar();
+
+    });
+
+    $(".sidebar-toggle").click(function(){
+        if(sidebarOpen){
+            closeSidebar();
+            return;
+        }
+        openSidebar();
+
+    });
+
+    $(".search-bar").click(function(){
+        openSidebar();
+    });
+
+
+    $(".theme-toggle").click(function(){
+        if(darkTheme){
+            changeTheme("light");
+            return;
+        }
+        changeTheme("dark");
+    });
+
+    $(".header-carousel .right").click(function(){
+        stage = $(".header-carousel .outer-stage")[0];
+        stage.scroll(stage.scrollLeft-416,0);
+    });
+    $(".header-carousel .left").click(function(){
+        stage = $(".header-carousel .outer-stage")[0];
+        stage.scroll(stage.scrollLeft+416,0);
+    });
 
     //setTimeout(function(){$(".spinner-wrapper")[0].style["display"] = "none";}, 1250);
     //$(".spinner-wrapper")[0].style["display"] = "none";
 });
 $(window).on('load',function() {
+    isMobileUser = (window.innerWidth < 576);
+
+    if(!isMobileUser){openSidebar();}
+    else{closeSidebar();}
     //setTimeout(function(){$(".spinner-wrapper")[0].style["display"] = "none";}, 250);
     $(".spinner-wrapper")[0].style["display"] = "none"
 });
+
 function sidebarHoverHandler(selectedItem) {
     items = $(".sidebar-item");
     for(i=0; i<items.length; i++){
@@ -41,33 +105,6 @@ function sidebarHoverHandler(selectedItem) {
     window.setTimeout(function() {hoveredRecently = false;}, 100);
 }
 
-$(".sidebar-item").hover(
-    function() {
-        if(!hoveredRecently){
-            sidebarHoverHandler($(this).attr("data-target"));
-        }
-
-    }, function() { }
-);
-
-$(".sidebar-child").hover(
-    function() {
-        if(!hoveredRecently){
-            sidebarHoverHandler("#"+$(this).parent()[0]["id"]);
-        }
-    },
-    function(){ }
-);
-
-$(".main-content").click(function(e) {
-    closeSidebar();
-});
-
-$( window ).resize(function() {
-    isMobileUser = (window.innerWidth < 576);
-    closeSidebar();
-
-});
 
 function calcScrollbar(){
     var b = $('body');
@@ -89,7 +126,6 @@ function openSidebar(){
     //$(".sidebar").css("box-shadow", "var(--theme-shadow) 10px 0px 10px 15px");
     //$(".sidebar").css("transform", "translate(0)");
     widthDiff = (sideDiff + calcScrollbar()).toString();
-    console.log("calc(100vw - "+widthDiff+"px)");
     $(".main-content").css("width", "calc(100vw - "+widthDiff+"px)");
     setTimeout(function(){$(".side-text").css("display", "unset");}, 150);
     sidebarOpen = true;
@@ -109,18 +145,6 @@ function closeSidebar(){
     sidebarHoverHandler(" ");
 }
 
-$(".sidebar-toggle").click(function(){
-    if(sidebarOpen){
-        closeSidebar();
-        return;
-    }
-    openSidebar();
-
-});
-
-$(".search-bar").click(function(){
-    openSidebar();
-});
 
 function changeTheme(theme){
     $(":root").css("--theme-bg-1", "var(--" + theme + "-theme-bg-1)");
@@ -154,20 +178,3 @@ function changeTheme(theme){
     darkTheme = theme=="dark";
     localStorage.setItem('theme', theme);
 }
-
-$(".theme-toggle").click(function(){
-    if(darkTheme){
-        changeTheme("light");
-        return;
-    }
-    changeTheme("dark");
-});
-
-$(".header-carousel .right").click(function(){
-    stage = $(".header-carousel .outer-stage")[0];
-    stage.scroll(stage.scrollLeft-416,0);
-});
-$(".header-carousel .left").click(function(){
-    stage = $(".header-carousel .outer-stage")[0];
-    stage.scroll(stage.scrollLeft+416,0);
-});

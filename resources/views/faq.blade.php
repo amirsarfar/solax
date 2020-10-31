@@ -24,7 +24,7 @@
                     <div class="row mt-3">
                         <form class="col" action="">
                             <div class="row justify-content-center">
-                                <input class="w-100 search-input" type="text" placeholder="جستجو">
+                                <input class="w-100 search-input" type="text" placeholder="جستجو" autofocus>
                                 <button type="submit" class="search-button"><i class="fal fa-search"></i></button>
                             </div>
                         </form>
