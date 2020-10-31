@@ -41,6 +41,10 @@ Route::group(['middleware'=>'language'],function ()
         return view('contact');
     })->name('contact');
 
+    Route::get('/single', function () {
+        return view('user.single');
+    })->name('single');
+
     Route::get('/faq', function () {
         return view('faq');
     })->name('faq');
@@ -49,10 +53,6 @@ Route::group(['middleware'=>'language'],function ()
         return view('article.index');
     })->name('articles');
     
-    Route::get('/single', function () {
-        return view('user.single');
-    })->name('single');
-
     Route::get('/article/single', function () {
         return view('user.articles.single');
     })->name('article.single');
@@ -60,6 +60,7 @@ Route::group(['middleware'=>'language'],function ()
     Route::get('/advance-search', function () {
         return view('user.advanced-search');
     });
+    
 });
 
 

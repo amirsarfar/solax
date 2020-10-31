@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{asset('css/article-single.css')}}">
 @endsection
 @section('main-content')
-    <div class="container-fluid">
+    <div class="container">
         <section>
             <div class="row mt-3">
                 <div class="col-md-4 order-2 order-md-1">
